@@ -1,0 +1,71 @@
+html{
+    scroll-behavior: smooth;
+}
+.main__titulos{
+    color:$marron;
+    font-family: 'Fjalla One', sans-serif;
+}
+
+.bg-marron{background-color:rgb(204,154,47);
+}
+.bg-negro{
+    background-color: $negro;
+}
+
+/* Navbar */
+.nav-link__fuente{
+    font-family: 'Fjalla One', sans-serif;
+}
+.nav-bar__dropdown-item{
+    font-family: 'Fjalla One', sans-serif;
+}
+/* tamaño y Hover Logo */
+.nav-bar__logo{
+    width: 110px;
+    &:hover{
+        transform: translateY(-3px); 
+    }
+}
+
+/* Estilos en textos */
+.footer__textoHorarios{
+    font-size: 20px;
+    text-align: center;
+}
+/* Boton Whatsapp */
+.btn__wpp{
+    margin: 0px 0px 40px 0px;
+}
+/* Formulario de Contacto */
+.form{
+    color:white;
+    padding: 10px;
+    font-size: 15px;
+    font-weight: bold;
+    background: url("../../images/cafe.jpeg");
+    background-size: cover;
+    border-radius: 30px;
+    width: 50%;    
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: stretch;
+}
+.tituloForm{
+    color:white;
+}
+.form button{
+    padding: 5px;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+/* Footer */
+.footer__nav{
+    list-style: none;
+    color: white;
+    text-decoration: none;
+}

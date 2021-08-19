@@ -1,0 +1,33 @@
+/* GRID IMAGENES DULCE */
+#grid__galeria--dulce
+    img{
+width: 100%;
+height: 290px;
+padding: 10px;
+}
+.grid__galeria--dulce--imgTorta{
+    position: relative;
+    left:250px;
+    width: 100%;
+    height: 290px;
+}
+// GRID IMAGENES SALADO
+#grid__galeria--salado
+    img{
+    width: 100%;
+    height: 290px;
+    padding: 10px;
+}
+#galeriaDesayunos 
+    img{
+    width: 100%;
+    height: 200px;
+    padding: 10px;
+}
+
+@media only screen and (max-width: 768px)
+{
+    #grid__galeria--salado{
+        width: 50%;
+    }
+}

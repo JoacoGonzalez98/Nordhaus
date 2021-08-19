@@ -1,0 +1,204 @@
+@charset "UTF-8";
+html {
+  scroll-behavior: smooth;
+}
+
+.main__titulos {
+  color: #8C6F4A;
+  font-family: 'Fjalla One', sans-serif;
+}
+
+.bg-marron {
+  background-color: #cc9a2f;
+}
+
+.bg-negro {
+  background-color: #212121;
+}
+
+/* Navbar */
+.nav-link__fuente {
+  font-family: 'Fjalla One', sans-serif;
+}
+
+.nav-bar__dropdown-item {
+  font-family: 'Fjalla One', sans-serif;
+}
+
+/* tamaño y Hover Logo */
+.nav-bar__logo {
+  width: 110px;
+}
+
+.nav-bar__logo:hover {
+  -webkit-transform: translateY(-3px);
+          transform: translateY(-3px);
+}
+
+/* Estilos en textos */
+.footer__textoHorarios {
+  font-size: 20px;
+  text-align: center;
+}
+
+/* Boton Whatsapp */
+.btn__wpp {
+  margin: 0px 0px 40px 0px;
+}
+
+/* Formulario de Contacto */
+.form {
+  color: white;
+  padding: 10px;
+  font-size: 15px;
+  font-weight: bold;
+  background: url("../../images/cafe.jpeg");
+  background-size: cover;
+  border-radius: 30px;
+  width: 50%;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+}
+
+.tituloForm {
+  color: white;
+}
+
+.form button {
+  padding: 5px;
+  border: none;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+/* Footer */
+.footer__nav {
+  list-style: none;
+  color: white;
+  text-decoration: none;
+}
+
+/* GRID IMAGENES DULCE */
+#grid__galeria--dulce img {
+  width: 100%;
+  height: 290px;
+  padding: 10px;
+}
+
+.grid__galeria--dulce--imgTorta {
+  position: relative;
+  left: 250px;
+  width: 100%;
+  height: 290px;
+}
+
+#grid__galeria--salado img {
+  width: 100%;
+  height: 290px;
+  padding: 10px;
+}
+
+#galeriaDesayunos img {
+  width: 100%;
+  height: 200px;
+  padding: 10px;
+}
+
+@media only screen and (max-width: 768px) {
+  #grid__galeria--salado {
+    width: 50%;
+  }
+}
+
+/* font-family: 'Fjalla One', sans-serif; */
+.fondo-rojo {
+  background-color: red;
+}
+
+.c-blanco {
+  color: white;
+}
+
+.fondo-verde {
+  background-color: #117f4e;
+}
+
+.botonFacebook, .botonInstagram, .botonLinkedin {
+  border-radius: 10px;
+}
+
+.botonFacebook {
+  color: #3b5998;
+}
+
+.botonInstagram {
+  color: #c13584;
+}
+
+.botonLinkedin {
+  color: #0e76a8;
+}
+
+.botones-form {
+  font-size: 20px;
+  border-radius: 10px;
+  border: 10px solid #212121;
+  background-color: #8C6F4A;
+  color: white;
+}
+
+.tamanio-10px {
+  font-size: 10px;
+}
+
+.tamanio-15px {
+  font-size: 15px;
+}
+
+.tamanio-20px {
+  font-size: 20px;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+footer {
+  color: white;
+  background-color: #212121;
+}
+
+footer div a {
+  font-size: 20px;
+}
+
+.imgRedonda {
+  width: 300px;
+  height: 300px;
+  border-radius: 150px;
+  border-color: #117f4e;
+  border-style: solid;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+/*# sourceMappingURL=main.css.map */

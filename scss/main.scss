@@ -1,0 +1,100 @@
+//variables
+@import 'colores';
+@import 'pages/index';
+@import 'pages/corporativo';
+@import 'pages/catering';
+@import 'pages/desayunos';
+
+/* font-family: 'Fjalla One', sans-serif; */
+
+.fondo-rojo{
+    background-color: red;
+}
+
+.c-blanco{
+    color:white
+}
+.fondo-verde{
+    background-color: $verde;
+}
+%boton{
+    border-radius: 10px;
+}
+.botonFacebook{
+    @extend %boton;
+    color: #3b5998;
+}
+.botonInstagram{
+    @extend %boton;
+    color: #c13584;
+}
+.botonLinkedin{
+    @extend %boton;
+    color: #0e76a8;
+}
+@mixin destacar($background, $color){
+    background-color:$background;
+    color:$color;
+}
+.botones-form{
+    font-size:20px;
+    border-radius: 10px;
+    border: 10px solid $negro;
+    @include destacar($marron,white);
+}
+@mixin seccion($enviar){
+    @if $enviar==footer{
+        color:white;
+        background-color: $negro;
+    }@else if $enviar==tabla{
+        color:$marron;
+        background-color: white;
+    }@else if $enviar==cuadro{
+        color:red;
+        background-color: white;
+    }@else {
+        color:white;
+        background-color:pink;
+    }
+}
+// Each
+@each $size in 10px, 15px, 20px{
+    .tamanio-#{$size}{
+        font-size:$size;
+    }
+}
+
+
+html{
+    scroll-behavior: smooth;
+}
+//Footer
+footer{
+    @include seccion(footer);
+    div a{
+        font-size: 20px;
+    }
+}
+
+.imgRedonda {
+    width:300px;
+    height:300px;
+    border-radius:150px;
+    border-color: $verde;
+    border-style: solid;
+    justify-content: center;
+}
+
+//Bootstrap
+
+$position-values: (
+    0: 0,
+    20:20%,
+    30:30%,
+    50: 50%,
+    100: 100%
+);
+
+
+
+
