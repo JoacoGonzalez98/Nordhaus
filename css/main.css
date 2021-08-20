@@ -97,6 +97,10 @@ html {
   text-decoration: none;
 }
 
+.border__bottom_footer {
+  border-bottom-width: 0px;
+}
+
 /* GRID IMAGENES DULCE */
 #grid__galeria--dulce img {
   width: 100%;
@@ -159,6 +163,11 @@ html {
 }
 
 .botones-form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   font-size: 20px;
   border-radius: 10px;
   border: 10px solid #212121;
