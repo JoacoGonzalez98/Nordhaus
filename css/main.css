@@ -97,8 +97,62 @@ html {
   text-decoration: none;
 }
 
-.border__bottom_footer {
-  border-bottom-width: 0px;
+.border-bottom_nav {
+  border-bottom: 1px solid white;
+  width: 100px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.border-bottom_contacto {
+  border-bottom: 1px solid white;
+  width: 100px;
+  margin: 30px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.border-bottom_horario {
+  border-bottom: 1px solid white;
+  width: 100%;
+  margin: 30px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.border-bottom_redes {
+  border-bottom: 1px solid white;
+  width: 100%;
+  margin: 30px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.glide__images {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 /* GRID IMAGENES DULCE */
@@ -113,6 +167,11 @@ html {
   left: 250px;
   width: 100%;
   height: 290px;
+}
+
+.salado1 {
+  -webkit-transform: translate();
+          transform: translate();
 }
 
 #grid__galeria--salado img {
@@ -162,17 +221,25 @@ html {
   color: #0e76a8;
 }
 
-.botones-form {
+.botones-form_enviar {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
   font-size: 20px;
   border-radius: 10px;
-  border: 10px solid #212121;
+  border: 5px solid #212121;
   background-color: #8C6F4A;
   color: white;
+}
+
+.botones-form_resetear {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 20px;
+  border-radius: 10px;
+  border: 5px solid #212121;
+  background-color: #8C6F4A;
 }
 
 .tamanio-10px {

@@ -70,6 +70,34 @@ html{
     text-decoration: none;
 }
 
-.border__bottom_footer{
-    border-bottom-width: 0px;
+.border-bottom_nav{
+    border-bottom: 1px solid white;
+    width: 100px;
+    justify-content: center;
+    padding: 5px;
+    display: flex;
+}
+.border-bottom_contacto{
+    border-bottom: 1px solid white;
+    width: 100px;
+    margin: 30px;
+    justify-content: center;
+    padding: 5px;
+    display: flex;
+}
+.border-bottom_horario{
+    border-bottom: 1px solid white;
+    width: 100%;
+    margin: 30px;
+    justify-content: center;
+    padding: 5px;
+    display: flex;
+}
+.border-bottom_redes{
+    border-bottom: 1px solid white;
+    width: 100%;
+    margin: 30px;
+    justify-content: center;
+    padding: 5px;
+    display: flex;
 }

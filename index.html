@@ -19,7 +19,7 @@
 <body>
 
     <!------------- Header -------- Navbar -------------------->
-        <nav class="navbar navbar-expand-lg navbar-light bg-light border-bottom border-secondary">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light border-bottom border-secondary mb-5">
             <div class="container">
                 <a class="navbar-brand" href="index.html"><img src="images/nordhauslogo.png" class="nav-bar__logo nav-bar__logo--hover" alt="Imagen del Logo Nordhaus"></a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
@@ -155,7 +155,7 @@
     <section class="row mb-5">
         <h2 class="display-5 fw-bold text-center mb-3 main__titulos" id="ubi"> Ubicación
         </h2>
-        <div class="d-flex flex-column flex-lg-row justify-content-around ">
+        <div class="d-flex flex-column flex-lg-row justify-content-around">
             <div class="col-12 col-lg-6 order-lg-first mt-5 mb-5 text-center">
             <img src="images/confiteria.jpg" class="imgRedonda wow animate__animated animate__fadeInLeft" alt="">
             <p class="fw-bold mt-2"><i class="bi bi-geo-alt-fill"> Av. Santa Fe 1741, Martínez.</i></p>
@@ -186,8 +186,14 @@
                     <label  for="consultas">Mensaje</label>
                     <textarea id="consultas" name="consultas" placeholder="Escribe aqui..." cols="50" rows="10"></textarea>
                     <!-- Botones Contacto -->
-                    <button type="submit" class="botones-form">Enviar</button>
-                    <button type="reset" class="botones-form">Resetear</button>
+                    <div class="d-flex flex-column flex-lg-row justify-content-center">
+                    <div class="botones-form_enviar">
+                    <button class="btn" type="submit">Enviar</button>
+                    </div>
+                    <div class="botones-form_resetear">
+                    <button type="reset" class="btn">Resetear</button>
+                    </div>
+                    </div>
                 </form>
         </div>
 
@@ -197,12 +203,12 @@
 </main>
 
 <!-- FOOTER -->
-    <footer class="container-fluid">
+    <footer class="container-fluid mt-5">
     <div class="col-12 border-bottom p-5">
-            <div class="row c-blanco d-flex justify-content-evenly align-items-center">
+            <div class="col c-blanco d-flex justify-content-evenly align-items-center">
                 <!-- Navegacion -->
-                <div class="container col-12 col-lg-3">
-                    <h4 class="border-bottom">Navegación</h4>
+                <div class="col-12 col-lg-3">
+                    <h4 class="border-bottom_nav">Navegación</h4>
                     <ul class="footer__nav">
                         <li><a href="index.html" class="footer__nav">Inicio</a></li>
                         <li><a href="pages/corporativo.html" class="footer__nav">Corporativo</a></li>
@@ -212,19 +218,19 @@
                 </div>
                 <!-- CONTACTO -->
                     <div class="col-12 col-lg-3">
-                        <h4 class="col-12 col-lg-4 border-bottom border__bottom_footer">CONTACTO</h4>
+                        <h4 class="col-12 col-lg-4 border-bottom_contacto">CONTACTO</h4>
                         <p class="col-12"><i class="bi bi-geo-alt text-center"></i> Av. Santa Fe 1741, Martínez</p>
                         <p class="col-12"><i class="bi bi-telephone text-center"></i> 4792-8420 / 4792-4021</p>
                         <p class="col-12"><i class="bi bi-envelope text-center"></i> nordhaussrl@arnetbiz.com.ar</p>
                     </div>
                     <!-- HORARIOS -->
                     <div class="col-12 col-lg-3">
-                        <h4 class="col-12 text-lg-center border-bottom border__bottom_footer">HORARIO DE ATENCIÓN</h4>
+                        <h4 class="col-12 text-lg-center border-bottom_horario">HORARIO DE ATENCIÓN</h4>
                             <p class="col-12 text-lg-center fst-italic footer__textoHorarios text-center">Todos los días del año inclusive los feriados de 7 a 21 horas.</p>
                     </div>
                     <!-- REDES SOCIALES -->
                     <div class="col-12 col-lg-3">
-                        <h4 class="col-12 text-center text-lg-center border-bottom border__bottom_footer">NUESTRAS REDES</h4>
+                        <h4 class="col-12 text-center text-lg-center border-bottom_redes">NUESTRAS REDES</h4>
                             <div class="col-12 col-lg-4 d-flex flex-row justify-content-around container">
                             <a href="https://www.facebook.com/Nordhaus.Confiteria" class="botonFacebook" target="_blank"><i title="Seguinos en Facebook" class="bi bi-facebook"></i></a>
                             <a href="https://www.instagram.com/confiterianordhaus/" class="botonInstagram" target="_blank"><i title="Seguinos en Instagram" class="bi bi-instagram"></i></a>
