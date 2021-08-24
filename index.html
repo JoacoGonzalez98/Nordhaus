@@ -8,6 +8,7 @@
     <meta name="description" content="Página principal de Confitería Nordhaus | Av. Santa Fe 1741, Martínez | 4792-8420 / 4792-4021.">
     <link rel="icon" type="image/jpg" href="images/nordhauslogo.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap" rel="stylesheet"> 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
@@ -40,8 +41,8 @@
                         <a class="nav-link nav-link__fuente dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">Servicios
                         </a>
                         <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                            <li><a class="dropdown-item nav-bar__dropdown-item" href="pages/catering.html">Catering</a></li>
-                            <li><a class="dropdown-item nav-bar__dropdown-item" href="pages/desayunos.html">Desayunos</a></li>
+                            <li><a class="dropdown-item nav-bar__dropdown-item button--dropdown" href="pages/catering.html">Catering</a></li>
+                            <li><a class="dropdown-item nav-bar__dropdown-item button--dropdown" href="pages/desayunos.html">Desayunos</a></li>
                         </ul>
                     </li>
                     <li class="nav-item">
@@ -60,7 +61,7 @@
 
     <!-- Portada -->
     <section class="row">
-        <div id="carouselExampleFade" class="carousel slide carousel-fade col-12 col-lg-6 mt-5" data-bs-ride="carousel">
+        <div id="carouselExampleFade" class="carousel slide carousel-fade col-12 col-lg-6 mt-5 mb-3" data-bs-ride="carousel">
             <div class="carousel-inner">
                 <div class="carousel-item active">
                     <img src="images/02.-Confiteria-Nordhaus-1024x683.jpg" class="d-block w-100" alt="Imagen principal del salon">
@@ -88,19 +89,19 @@
             </button>
             </div>
         <!------ Contenedor Portada Texto ------>
-            <div id="portada" class="col-12 col-lg-6 order-lg-first mt-5 mb-5">
+            <div id="portada" class="col-12 col-lg-6 order-lg-first mt-3 mb-5">
                 <div class="col-12 my-3">
                     <h1 class="display-1 text-center text-lg-start"><span class="fw-bold main__titulos">NORDHAUS</span>
                         CONFITERIA & PANADERIA</h1>
                 </div>
-                <div class="col-12 my-3 mt-4">
+                <div class="col-12 my-3 mt-3">
                     <p class="text-center text-lg-center fst-italic">Nordhaus es una empresa de origen familiar con valores arraigados. <br> Su principal objetivo es conservar y transmitir su filosofía de trabajo a través del tiempo y las personas involucradas</p>
                 </div>
             </div>
     </section>
     <p class="text-center">Somos una confitería clásica pero con espíritu moderno con más de 50 años de trayectoria. Nacimos como Panadería La Avenida y a partir del año 1999 incorporamos recetas típicas de la alta y refinada repostería alemana. Motivo por el cual decidimos llamarnos Nordhaus. El nombre Nordhaus proviene de una localidad alemana llamada Nordhausen que significa Casas del Norte. Nuestra misión es satisfacer las necesidades de nuestros clientes mediante una atención personalizada y un producto de calidad. Poder superar sus expectativas es lo que nos motiva.</p>
     <!-- Seccion Cards -->
-    <section class="row my-5" id="cards">
+    <section class="row my-5 wow animate__animated animate__backInDown" id="cards">
             <div class="col-12">
                 <h2 class="display-5 fw-bold text-center main__titulos mt-5" id="prod"> Nuestros Productos
                 </h2>
@@ -111,7 +112,7 @@
             </div>
                 <!-- Card 1 -->
             <div class="col-12 my-5 d-flex flex-column flex-lg-row justify-content-around align-items-center">
-                <div class="card" style="width: 18rem;">
+                <div class="card wow animate__animated animate__pulse" style="width: 18rem;">
                         <img src="images/panes-artesanales-nordhaus-2015-foto-01.jpg" class="card-img-top" alt="Imagen panadería">
                     <div class="card-body">
                         <h5 class="card-title fw-bold text-center"><a href="pages/productos.html#panaderia" class="link-dark">Panadería</a></h5>
@@ -119,7 +120,7 @@
                     </div>
                 </div>
                 <!-- Card 2 -->
-                <div class="card" style="width: 18rem;">
+                <div class="card wow animate__animated animate__pulse" style="width: 18rem;">
                         <img src="images/05.-Torta-Penny-Post-Nordhaus-1024x683.jpg" class="card-img-top" alt="Imagen pastelería">
                     <div class="card-body">
                         <h5 class="card-title fw-bold text-center"><a href="pages/productos.html#pasteleria" class="link-dark">Repostería | Pastelería</a></h5>
@@ -127,7 +128,7 @@
                     </div>
                 </div>
                 <!-- Card 3 -->
-                <div class="card" style="width: 18rem;">
+                <div class="card wow animate__animated animate__pulse" style="width: 18rem;">
                         <img src="images/06.-chocolate-bombones-nordhaus.jpg" class="card-img-top" alt="Imagen bombonería">
                     <div class="card-body">
                         <h5 class="card-title fw-bold text-center"><a href="pages/productos.html#bomboneria" class="link-dark">Bombonería</a></h5>
@@ -136,21 +137,15 @@
                 </div>
             </div>
     </section>
-    <section>
-
-
-
+    <!-- BOTON WHATSAPP -->
+    <section class="container-fluid">
+        <div class="col-12">
+            <a href="https://api.whatsapp.com/send?phone=541137719756&text=Hola%20quiero%20hacer%20un%20pedido" class="float" target="_blank">
+                <i class="bi bi-whatsapp my-float" title="¡Ahora podés pedir por Whatsapp!"></i>
+                </a>
+        </div>
     </section>
-        <!-- BOTON WHATSAPP -->
-        <div class="col-12 my-2">
-        <a type="button" class="col-2 btn btn-success btn__wpp fixed-bottom border border-dark" href="https://whatsapp.com" target="_blank">
-            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-whatsapp" viewBox="0 0 16 16">
-    <path d="M13.601 2.326A7.854 7.854 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.933 7.933 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.898 7.898 0 0 0 13.6 2.326zM7.994 14.521a6.573 6.573 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.557 6.557 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592zm3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.729.729 0 0 0-.529.247c-.182.198-.691.677-.691 1.654 0 .977.71 1.916.81 2.049.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232z"></path>
-    </svg>
-            ¡Ahora podés pedir
-            <br>por Whatsapp!
-        </a>
-    </div>
+
     <!-- Ubicación -->
     <section class="row mb-5">
         <h2 class="display-5 fw-bold text-center mb-3 main__titulos" id="ubi"> Ubicación
@@ -168,7 +163,7 @@
     </section>
     <!-- Contacto -->
     <section>
-        <div>
+        <div class="wow animate__animated animate__backInDown">
             <h2 class="display-5 fw-bold text-center mb-3 main__titulos" id="contacto"> Contacto
             </h2>
         <div class="mb-5">
@@ -186,12 +181,12 @@
                     <label  for="consultas">Mensaje</label>
                     <textarea id="consultas" name="consultas" placeholder="Escribe aqui..." cols="50" rows="10"></textarea>
                     <!-- Botones Contacto -->
-                    <div class="d-flex flex-column flex-lg-row justify-content-center">
+                    <div class="d-flex flex-column flex-lg-row justify-content-start">
                     <div class="botones-form_enviar">
-                    <button class="btn" type="submit">Enviar</button>
+                    <button class="btn fw-bold" type="submit">Enviar</button>
                     </div>
                     <div class="botones-form_resetear">
-                    <button type="reset" class="btn">Resetear</button>
+                    <button type="reset" class="btn fw-bold">Resetear</button>
                     </div>
                     </div>
                 </form>
@@ -205,10 +200,10 @@
 <!-- FOOTER -->
     <footer class="container-fluid mt-5">
     <div class="col-12 border-bottom p-5">
-            <div class="col c-blanco d-flex justify-content-evenly align-items-center">
+            <div class="row align-items-center d-flex flex-row justify-content-center align-items-stretch">
                 <!-- Navegacion -->
                 <div class="col-12 col-lg-3">
-                    <h4 class="border-bottom_nav">Navegación</h4>
+                    <h4 class="border-bottom_nav">NAVEGACIÓN</h4>
                     <ul class="footer__nav">
                         <li><a href="index.html" class="footer__nav">Inicio</a></li>
                         <li><a href="pages/corporativo.html" class="footer__nav">Corporativo</a></li>
@@ -217,22 +212,23 @@
                     </ul>
                 </div>
                 <!-- CONTACTO -->
-                    <div class="col-12 col-lg-3">
-                        <h4 class="col-12 col-lg-4 border-bottom_contacto">CONTACTO</h4>
-                        <p class="col-12"><i class="bi bi-geo-alt text-center"></i> Av. Santa Fe 1741, Martínez</p>
-                        <p class="col-12"><i class="bi bi-telephone text-center"></i> 4792-8420 / 4792-4021</p>
-                        <p class="col-12"><i class="bi bi-envelope text-center"></i> nordhaussrl@arnetbiz.com.ar</p>
+                    <div class="col-12 col-lg-3 text-center h-75">
+                        <h4 class="col-12 col-lg-3 border-bottom_contacto">CONTACTO</h4>
+                        <p class="col-12"><i class="bi bi-geo-alt "></i> Av. Santa Fe 1741, Martínez</p>
+                        <p class="col-12"><i class="bi bi-telephone "></i> 4792-8420 / 4792-4021</p>
+                        <p class="col-12"><i class="bi bi-envelope "></i> nordhaussrl@arnetbiz.com.ar</p>
+                        
                     </div>
                     <!-- HORARIOS -->
-                    <div class="col-12 col-lg-3">
+                    <div class="col-12 col-lg-3 text-center h-75">
                         <h4 class="col-12 text-lg-center border-bottom_horario">HORARIO DE ATENCIÓN</h4>
-                            <p class="col-12 text-lg-center fst-italic footer__textoHorarios text-center">Todos los días del año inclusive los feriados de 7 a 21 horas.</p>
+                            <p class="col-12 fst-italic text-center">Todos los días del año inclusive los feriados de 7 a 21 horas.</p>
                     </div>
                     <!-- REDES SOCIALES -->
-                    <div class="col-12 col-lg-3">
+                    <div class="col-12 col-lg-3 text-center h-75">
                         <h4 class="col-12 text-center text-lg-center border-bottom_redes">NUESTRAS REDES</h4>
-                            <div class="col-12 col-lg-4 d-flex flex-row justify-content-around container">
-                            <a href="https://www.facebook.com/Nordhaus.Confiteria" class="botonFacebook" target="_blank"><i title="Seguinos en Facebook" class="bi bi-facebook"></i></a>
+                            <div class="col-12 col-lg-3 d-flex justify-content-around text-center w-100 m-auto">
+                            <a href="https://www.facebook.com/Nordhaus.Confiteria" class="botonFacebook " target="_blank"><i title="Seguinos en Facebook" class="bi bi-facebook"></i></a>
                             <a href="https://www.instagram.com/confiterianordhaus/" class="botonInstagram" target="_blank"><i title="Seguinos en Instagram" class="bi bi-instagram"></i></a>
                             <a href="https://www.linkedin.com/in/confiter%C3%ADa-nordhaus-83830178/" class="botonLinkedin" target="_blank"><i title="Seguinos en Linkedin" class="bi bi-linkedin"></i></a>
                             </div>
@@ -240,7 +236,7 @@
             </div>
     </div>
     <!-- Derechos -->
-    <p class="col-12 text-center c-blanco py-2">Confitería & Panadería Nordhaus | Av. Santa Fe 1741, Martínez | 4792-8420 / 4792-4021 Copyright © 2021. Todos los derechos reservados.
+    <p class="col-12 text-center c-blanco py-2 m-0">Confitería & Panadería Nordhaus | Av. Santa Fe 1741, Martínez | 4792-8420 / 4792-4021 Copyright © 2021. Todos los derechos reservados.
 
     </p>
     </footer>

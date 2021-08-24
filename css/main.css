@@ -25,6 +25,10 @@ html {
   font-family: 'Fjalla One', sans-serif;
 }
 
+.button--dropdown:focus {
+  background-color: #117F4E;
+}
+
 /* tamaño y Hover Logo */
 .nav-bar__logo {
   width: 110px;
@@ -35,15 +39,35 @@ html {
           transform: translateY(-3px);
 }
 
-/* Estilos en textos */
-.footer__textoHorarios {
-  font-size: 20px;
-  text-align: center;
-}
-
+/* Animaciones CARDS */
 /* Boton Whatsapp */
 .btn__wpp {
   margin: 0px 0px 40px 0px;
+}
+
+.float {
+  position: fixed;
+  width: 60px;
+  height: 60px;
+  bottom: 40px;
+  background-color: #25d366;
+  padding: 5px;
+  color: #FFF;
+  border-radius: 50px;
+  text-align: center;
+  font-size: 2rem;
+  -webkit-box-shadow: 2px 2px 3px #999;
+          box-shadow: 2px 2px 3px #999;
+}
+
+.float:hover {
+  text-decoration: none;
+  color: #25d366;
+  background-color: #fff;
+}
+
+.my-float {
+  margin-top: 16px;
 }
 
 /* Formulario de Contacto */
@@ -97,9 +121,14 @@ html {
   text-decoration: none;
 }
 
+.footer-widgets {
+  text-align: center;
+}
+
 .border-bottom_nav {
   border-bottom: 1px solid white;
-  width: 100px;
+  width: 100%;
+  margin: 30px;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -111,7 +140,7 @@ html {
 
 .border-bottom_contacto {
   border-bottom: 1px solid white;
-  width: 100px;
+  width: 100%;
   margin: 30px;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
@@ -146,6 +175,22 @@ html {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+
+.botonFacebook, .botonInstagram, .botonLinkedin {
+  border-radius: 10px;
+}
+
+.botonFacebook {
+  color: #8C6F4A;
+}
+
+.botonInstagram {
+  color: #8C6F4A;
+}
+
+.botonLinkedin {
+  color: #8C6F4A;
 }
 
 .glide__images {
@@ -193,11 +238,25 @@ html {
 }
 
 /* font-family: 'Fjalla One', sans-serif; */
+body::-webkit-scrollbar {
+  width: 7px;
+  background: #212121;
+}
+
+body::-webkit-scrollbar-thumb {
+  background: #606060;
+  border-radius: 8px;
+}
+
 .fondo-rojo {
   background-color: red;
 }
 
-.c-blanco {
+.c-black {
+  color: black;
+}
+
+.c-white {
   color: white;
 }
 
@@ -205,41 +264,70 @@ html {
   background-color: #117f4e;
 }
 
-.botonFacebook, .botonInstagram, .botonLinkedin {
-  border-radius: 10px;
-}
-
-.botonFacebook {
-  color: #3b5998;
-}
-
-.botonInstagram {
-  color: #c13584;
-}
-
-.botonLinkedin {
-  color: #0e76a8;
-}
-
 .botones-form_enviar {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
   font-size: 20px;
   border-radius: 10px;
-  border: 5px solid #212121;
-  background-color: #8C6F4A;
-  color: white;
+  border: 5px solid #8C6F4A;
+  background-color: white;
+}
+
+.botones-form_enviar:hover {
+  background-color: #117f4e;
+}
+
+.botones-form_enviar:active {
+  border-color: #117f4e;
 }
 
 .botones-form_resetear {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
   font-size: 20px;
   border-radius: 10px;
-  border: 5px solid #212121;
-  background-color: #8C6F4A;
+  border: 5px solid #8C6F4A;
+  background-color: white;
+}
+
+.botones-form_resetear:hover {
+  background-color: #117f4e;
+}
+
+.botones-form_resetear:active {
+  background-color: #117f4e;
+}
+
+.form {
+  color: white;
+  padding: 10px;
+  font-size: 15px;
+  font-weight: bold;
+  background: url("../images/cafe.jpeg");
+  background-size: cover;
+  border-radius: 30px;
+  width: 50%;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
 }
 
 .tamanio-10px {

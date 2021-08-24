@@ -7,30 +7,26 @@
 
 /* font-family: 'Fjalla One', sans-serif; */
 
+//Scrollbar personalizado (no funciona en: Firefox y Edge)
+body::-webkit-scrollbar {
+    width: 7px;
+    background: $negro;
+}
+body::-webkit-scrollbar-thumb {
+    background: #606060;
+    border-radius: 8px;
+}
+// Clases para colorear
 .fondo-rojo{
     background-color: red;
 }
-
-.c-blanco{
+.c-black{color:black
+}
+.c-white{
     color:white
 }
 .fondo-verde{
     background-color: $verde;
-}
-%boton{
-    border-radius: 10px;
-}
-.botonFacebook{
-    @extend %boton;
-    color: #3b5998;
-}
-.botonInstagram{
-    @extend %boton;
-    color: #c13584;
-}
-.botonLinkedin{
-    @extend %boton;
-    color: #0e76a8;
 }
 @mixin destacar($background, $color){
     background-color:$background;
@@ -38,17 +34,48 @@
 }
 .botones-form_enviar{
     display: flex;
+    justify-content: start;
     font-size:20px;
     border-radius: 10px;
-    border: 5px solid $negro;
-    @include destacar($marron,white);
+    border: 5px solid $marron;
+    background-color: white;
+}
+.botones-form_enviar:hover{
+    background-color: $verde;
+}
+.botones-form_enviar:active{
+    border-color: $verde;
 }
 .botones-form_resetear{
     display: flex;
+    justify-content: start;
     font-size:20px;
     border-radius: 10px;
-    border: 5px solid $negro;
-    background-color: $marron;
+    border: 5px solid $marron;
+    background-color: white;
+}
+.botones-form_resetear:hover{
+    background-color: $verde;
+}
+.botones-form_resetear:active{
+    background-color: $verde ;
+}
+
+// Tuve que agregar el form al main.scss porque sino no reconoce el background url y lo saltea(el watch SASS)
+.form{
+    color:white;
+    padding: 10px;
+    font-size: 15px;
+    font-weight: bold;
+    background: url("../images/cafe.jpeg");
+    background-size: cover;
+    border-radius: 30px;
+    width: 50%;    
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: stretch;
 }
 @mixin seccion($enviar){
     @if $enviar==footer{
@@ -76,7 +103,7 @@
 html{
     scroll-behavior: smooth;
 }
-//Footer
+//
 footer{
     @include seccion(footer);
     div a{
