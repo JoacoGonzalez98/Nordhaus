@@ -29,18 +29,18 @@
                         <a class="nav-link nav-link nav-link__fuente" aria-current="page" href="../index.html">Inicio</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link nav-link nav-link__fuente" href="../index.html#prod">Productos</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link nav-link nav-link__fuente" href="../pages/corporativo.html">Corporativo</a>
+                        <a class="nav-link nav-link nav-link__fuente" href="../pages/productos.html">Productos</a>
                     </li>
                     <li class="nav-item dropdown">
-                        <a class="nav-link nav-link__fuente dropdown-toggle active" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">Servicios
+                        <a class="nav-link nav-link nav-link__fuente dropdown-toggle active" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">Servicios
                         </a>
                         <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
                             <li><a class="dropdown-item nav-bar__dropdown-item button--dropdown" href="../pages/catering.html">Catering</a></li>
                             <li><a class="dropdown-item nav-bar__dropdown-item button--dropdown" href="../pages/desayunos.html">Desayunos</a></li>
                         </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link nav-link nav-link__fuente" href="../pages/corporativo.html">Corporativo</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link nav-link nav-link__fuente" href="../index.html#ubi">Ubicación</a>
@@ -54,17 +54,20 @@
         </nav>
     
     <main>
-        <!-- ACCORDION DESAYUNOS -->
+        
+        <!-- TITULOS PRINCIPALES -->
+
         <section class="container">
             <div class="col-12">
-                <h2 class="display-5 fw-bold text-center main__titulos mt-3" id="prod"> Nuestros Desayunos
+                <h2 class="display-3 fw-bold text-center main__titulos mt-3" id="prod"> Nuestros Desayunos
                 </h2>
             </div>
 
             <div class="col-12">
                 <p class="text-center w-50 mx-auto">Elegí el que más te guste y disfrutalo solo o con la/s persona/s que más quieras! Hacemos envíos a domicilio. Pasa una mañana distinta y llena de cosas ricas.</p>
-                <ul class="text-center" ><li>Envio gratis en la zona(hasta 2km de Nordhaus).</li> 
-                    <li>Consultar envíos fuera de la zona.</li>
+                <ul class="list-group text-center ">
+                    <li class="list-group-item border-white">Envio gratis en la zona <span class="fst-italic">(hasta 2km de Nordhaus)</span>.</li> 
+                    <li class="list-group-item border-white">Consultar envíos fuera de la zona.</li>
                 </ul>
             </div>
             <!-- Galeria desayuno -->
@@ -79,7 +82,7 @@
                 </div>
             </section>
             
-            
+            <!-- ACCORDION DESAYUNOS -->
         <div class="accordion accordion-flush bg-negro c-negro" id="accordionFlushExample">
             <div class="accordion-item">
             <h2 class="accordion-header" id="flush-headingOne">
@@ -504,50 +507,52 @@
         </div>
     </section>
 </main>
-<!-- FOOTER -->
-<footer class="container-fluid mt-5">
-    <div class="col-12 border-bottom p-5">
-            <div class="row align-items-center">
-                <!-- Navegacion -->
-                <div class="col-12 col-lg-3">
-                    <h4 class="border-bottom_nav">Navegación</h4>
-                    <ul class="footer__nav">
-                        <li><a href="index.html" class="footer__nav">Inicio</a></li>
-                        <li><a href="pages/corporativo.html" class="footer__nav">Corporativo</a></li>
-                        <li><a href="pages/catering.html" class="footer__nav">Servicio de Catering</a></li>
-                        <li><a href="pages/desayunos.html" class="footer__nav">Desayunos</a></li>
-                    </ul>
-                </div>
-                <!-- CONTACTO -->
-                    <div class="col-12 col-lg-3 text-center">
-                        <h4 class="col-12 col-lg-4 border-bottom_contacto">CONTACTO</h4>
-                        <p class="col-12"><i class="bi bi-geo-alt text-center"></i> Av. Santa Fe 1741, Martínez</p>
-                        <p class="col-12"><i class="bi bi-telephone text-center"></i> 4792-8420 / 4792-4021</p>
-                        <p class="col-12"><i class="bi bi-envelope text-center"></i> nordhaussrl@arnetbiz.com.ar</p>
-                    </div>
-                    <!-- HORARIOS -->
-                    <div class="col-12 col-lg-3 text-center">
-                        <h4 class="col-12 text-lg-center border-bottom_horario">HORARIO DE ATENCIÓN</h4>
-                            <p class="col-12 text-lg-center fst-italic text-center">Todos los días del año inclusive los feriados de 7 a 21 horas.</p>
-                    </div>
-                    <!-- REDES SOCIALES -->
+    <!-- FOOTER -->
+    <footer class="container-fluid mt-5">
+        <div class="col-12 border-bottom p-5">
+                <div class="row align-items-center d-flex flex-row justify-content-center align-items-stretch">
+                    <!-- Navegacion -->
                     <div class="col-12 col-lg-3">
-                        <h4 class="col-12 text-center text-lg-center border-bottom_redes">NUESTRAS REDES</h4>
-                            <div class="col-12 col-lg-4 d-flex justify-content-around w-100 m-auto">
-                            <a href="https://www.facebook.com/Nordhaus.Confiteria" class="botonFacebook" target="_blank"><i title="Seguinos en Facebook" class="bi bi-facebook"></i></a>
-                            <a href="https://www.instagram.com/confiterianordhaus/" class="botonInstagram" target="_blank"><i title="Seguinos en Instagram" class="bi bi-instagram"></i></a>
-                            <a href="https://www.linkedin.com/in/confiter%C3%ADa-nordhaus-83830178/" class="botonLinkedin" target="_blank"><i title="Seguinos en Linkedin" class="bi bi-linkedin"></i></a>
-                            </div>
+                        <h4 class="border-bottom_nav">NAVEGACIÓN</h4>
+                        <ul class="footer-nav">
+                            <li><a href="index.html" class="footer-nav">Inicio</a></li>
+                            <li><a href="../pages/productos.html" class="footer-nav">Productos</a></li>
+                            <li><a href="../pages/corporativo.html" class="footer-nav">Corporativo</a></li>
+                            <li><a href="../pages/catering.html" class="footer-nav">Servicio de Catering</a></li>
+                            <li><a href="../pages/desayunos.html" class="footer-nav">Desayunos</a></li>
+                        </ul>
                     </div>
-            </div>
-    </div>
-    <!-- Derechos -->
-    <p class="col-12 text-center c-blanco py-2">Confitería & Panadería Nordhaus | Av. Santa Fe 1741, Martínez | 4792-8420 / 4792-4021 Copyright © 2021. Todos los derechos reservados.
+                    <!-- CONTACTO -->
+                        <div class="col-12 col-lg-3 text-center h-75">
+                            <h4 class="col-12 col-lg-3 border-bottom_contacto">CONTACTO</h4>
+                            <p class="col-12"><i class="bi bi-geo-alt "></i> Av. Santa Fe 1741, Martínez</p>
+                            <p class="col-12"><i class="bi bi-telephone "></i> 4792-8420 / 4792-4021</p>
+                            <p class="col-12"><i class="bi bi-envelope "></i> nordhaussrl@arnetbiz.com.ar</p>
+                            
+                        </div>
+                        <!-- HORARIOS -->
+                        <div class="col-12 col-lg-3 text-center h-75">
+                            <h4 class="col-12 text-lg-3 border-bottom_horario">HORARIO DE ATENCIÓN</h4>
+                                <p class="col-12 fst-italic text-lg-center">Todos los días del año inclusive los feriados de 7 a 21 horas.</p>
+                        </div>
+                        <!-- REDES SOCIALES -->
+                        <div class="col-12 col-lg-3 text-center h-75">
+                            <h4 class="col-12 text-center text-lg-center border-bottom_redes">NUESTRAS REDES</h4>
+                                <div class="col-12 col-lg-3 d-flex justify-content-around text-center w-100 m-auto">
+                                <a href="https://www.facebook.com/Nordhaus.Confiteria" class="boton-facebook" target="_blank"><i title="Seguinos en Facebook" class="bi bi-facebook"></i></a>
+                                <a href="https://www.instagram.com/confiterianordhaus/" class="boton-instagram" target="_blank"><i title="Seguinos en Instagram" class="bi bi-instagram"></i></a>
+                                <a href="https://www.linkedin.com/in/confiter%C3%ADa-nordhaus-83830178/" class="boton-linkedin" target="_blank"><i title="Seguinos en Linkedin" class="bi bi-linkedin"></i></a>
+                                </div>
+                        </div>
+                </div>
+        </div>
+    
+        <!-- Derechos -->
+        <p class="col-12 text-center c-blanco py-2 m-0">Confitería & Panadería Nordhaus | Av. Santa Fe 1741, Martínez | 4792-8420 / 4792-4021 Copyright © 2021. Todos los derechos reservados. | Diseñado por <a class="text-decoration-none text-info" href="https://www.linkedin.com/in/joaquin-ignacio-gonzalez-7b3a48142/" target="_blank">JG</a>
+        </p>
+        </footer>
 
-    </p>
-    </footer>
+    <!-- SCRIPTS -->
         <script src="../js/bootstrap.min.js"></script>
-
-
 </body>
 </html>

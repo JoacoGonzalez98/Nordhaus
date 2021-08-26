@@ -1,0 +1,60 @@
+.panaderia-tamanio{
+    height: 650px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.pasteleria-tamanio{
+    height: 650px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.bomboneria-tamanio{
+    height: 650px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.botones-productos{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    text-decoration: none;
+}
+.btn-celiacos{
+        border:none;
+        border-radius: 2px;
+        cursor: pointer;
+    font-size: 1rem;
+    margin: 1rem;
+    color:white;
+    background-image: linear-gradient(to left, $marron 50%, $verde 50%);
+    background-size: 200%;
+    background-repeat: no-repeat;
+    background-position: right;
+    transition: background-position .5s ease;
+        &:hover{
+                background-position: left;
+                color:white;
+        }
+}
+.btn-ensaladas{
+    border:none;
+    border-radius: 2px;
+    cursor: pointer;
+font-size: 1rem;
+margin: 1rem;
+color:white;
+background-image: linear-gradient(to right, $marron 50%, $verde 50%);
+background-size: 200%;
+background-repeat: no-repeat;
+background-position: left;
+transition: background-position .5s ease;
+    &:hover{
+            background-position: right;
+            color:white;
+    }
+}

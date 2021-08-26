@@ -114,11 +114,16 @@ html {
       justify-content: space-around;
 }
 
+/* MAPS */
 /* Footer */
-.footer__nav {
+.footer-nav {
   list-style: none;
   color: white;
   text-decoration: none;
+}
+
+.footer-nav:hover {
+  color: #8C6F4A;
 }
 
 .footer-widgets {
@@ -177,20 +182,155 @@ html {
   display: flex;
 }
 
-.botonFacebook, .botonInstagram, .botonLinkedin {
+.boton-facebook, .boton-instagram, .boton-linkedin {
   border-radius: 10px;
 }
 
-.botonFacebook {
+.boton-facebook {
   color: #8C6F4A;
 }
 
-.botonInstagram {
+.boton-facebook:hover {
   color: #8C6F4A;
 }
 
-.botonLinkedin {
+.boton-instagram {
   color: #8C6F4A;
+}
+
+.boton-instagram:hover {
+  color: #8C6F4A;
+}
+
+.boton-linkedin {
+  color: #8C6F4A;
+}
+
+.boton-linkedin:hover {
+  color: #8C6F4A;
+}
+
+.panaderia-tamanio {
+  height: 650px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.pasteleria-tamanio {
+  height: 650px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.bomboneria-tamanio {
+  height: 650px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.botones-productos {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  list-style: none;
+  text-decoration: none;
+}
+
+.btn-celiacos {
+  border: none;
+  border-radius: 2px;
+  cursor: pointer;
+  font-size: 1rem;
+  margin: 1rem;
+  color: white;
+  background-image: -webkit-gradient(linear, right top, left top, color-stop(50%, #8C6F4A), color-stop(50%, #117f4e));
+  background-image: linear-gradient(to left, #8C6F4A 50%, #117f4e 50%);
+  background-size: 200%;
+  background-repeat: no-repeat;
+  background-position: right;
+  -webkit-transition: background-position .5s ease;
+  transition: background-position .5s ease;
+}
+
+.btn-celiacos:hover {
+  background-position: left;
+  color: white;
+}
+
+.btn-ensaladas {
+  border: none;
+  border-radius: 2px;
+  cursor: pointer;
+  font-size: 1rem;
+  margin: 1rem;
+  color: white;
+  background-image: -webkit-gradient(linear, left top, right top, color-stop(50%, #8C6F4A), color-stop(50%, #117f4e));
+  background-image: linear-gradient(to right, #8C6F4A 50%, #117f4e 50%);
+  background-size: 200%;
+  background-repeat: no-repeat;
+  background-position: left;
+  -webkit-transition: background-position .5s ease;
+  transition: background-position .5s ease;
+}
+
+.btn-ensaladas:hover {
+  background-position: right;
+  color: white;
+}
+
+#galeriaDesayunos img {
+  width: 100%;
+  height: 200px;
+  padding: 10px;
+}
+
+.btn-pedidos {
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 1rem;
+  color: #117f4e;
+  border: 2px solid;
+  background: -webkit-gradient(linear, left top, right top, color-stop(50%, transparent), color-stop(50%, #117f4e)) no-repeat left/200%;
+  background: linear-gradient(to right, transparent 50%, #117f4e 50%) no-repeat left/200%;
+  -webkit-transition: background-position 0.3s ease;
+  transition: background-position 0.3s ease;
+}
+
+.btn-pedidos:hover {
+  background-position: right;
+  color: #212121;
+  border: 2px solid #117f4e;
 }
 
 .glide__images {
@@ -200,41 +340,98 @@ html {
      object-fit: cover;
 }
 
-/* GRID IMAGENES DULCE */
-#grid__galeria--dulce img {
-  width: 100%;
-  height: 290px;
-  padding: 10px;
+.c-gris {
+  color: #6C757D;
 }
 
-.grid__galeria--dulce--imgTorta {
-  position: relative;
-  left: 250px;
-  width: 100%;
-  height: 290px;
-}
-
-.salado1 {
-  -webkit-transform: translate();
-          transform: translate();
-}
-
-#grid__galeria--salado img {
-  width: 100%;
-  height: 290px;
-  padding: 10px;
-}
-
-#galeriaDesayunos img {
-  width: 100%;
+.marcas1 {
   height: 200px;
-  padding: 10px;
+  width: 200px;
 }
 
-@media only screen and (max-width: 768px) {
-  #grid__galeria--salado {
-    width: 50%;
-  }
+.marcas2 {
+  height: 200px;
+  width: 200px;
+}
+
+.marcas3 {
+  height: 200px;
+  width: 200px;
+}
+
+.marcas4 {
+  height: 200px;
+  width: 200px;
+}
+
+.marcas5 {
+  height: 200px;
+  width: 200px;
+}
+
+.marcas6 {
+  height: 200px;
+  width: 200px;
+}
+
+.marcas7 {
+  height: 200px;
+  width: 200px;
+}
+
+.marcas8 {
+  height: 200px;
+  width: 200px;
+}
+
+.marcas9 {
+  height: 200px;
+  width: 200px;
+}
+
+.marcas10 {
+  height: 200px;
+  width: 200px;
+}
+
+.marcas11 {
+  height: 200px;
+  width: 200px;
+}
+
+.marcas12 {
+  height: 200px;
+  width: 200px;
+}
+
+.marcas13 {
+  height: 200px;
+  width: 200px;
+}
+
+.marcas14 {
+  height: 200px;
+  width: 200px;
+}
+
+.marcas15 {
+  height: 200px;
+  width: 200px;
+}
+
+.marcas16 {
+  height: 200px;
+  width: 200px;
+}
+
+.marcas17 {
+  height: 200px;
+  width: 200px;
+}
+
+.marcas18 {
+  height: 200px;
+  width: 200px;
 }
 
 /* font-family: 'Fjalla One', sans-serif; */
@@ -303,7 +500,7 @@ body::-webkit-scrollbar-thumb {
 }
 
 .botones-form_resetear:active {
-  background-color: #117f4e;
+  border-color: #117f4e;
 }
 
 .form {

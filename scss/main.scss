@@ -1,9 +1,10 @@
 //variables
 @import 'colores';
 @import 'pages/index';
-@import 'pages/corporativo';
+@import 'pages/productos';
 @import 'pages/catering';
 @import 'pages/desayunos';
+@import 'pages/corporativo';
 
 /* font-family: 'Fjalla One', sans-serif; */
 
@@ -58,7 +59,7 @@ body::-webkit-scrollbar-thumb {
     background-color: $verde;
 }
 .botones-form_resetear:active{
-    background-color: $verde ;
+    border-color: $verde;
 }
 
 // Tuve que agregar el form al main.scss porque sino no reconoce el background url y lo saltea(el watch SASS)

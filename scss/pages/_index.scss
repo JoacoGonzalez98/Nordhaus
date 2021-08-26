@@ -86,11 +86,16 @@ html{
     flex-direction: column;
     justify-content: space-around;
 }
+/* MAPS */
+
 /* Footer */
-.footer__nav{
+.footer-nav{
     list-style: none;
     color: white;
     text-decoration: none;
+    &:hover{
+        color:$marron;
+    }
 }
 .footer-widgets{
     text-align: center;
@@ -130,15 +135,24 @@ html{
 %boton{
     border-radius: 10px;
 }
-.botonFacebook{
+.boton-facebook{
     @extend %boton;
     color: $marron;
+    &:hover {
+        color:$marron;
+    }
 }
-.botonInstagram{
+.boton-instagram{
     @extend %boton;
     color: $marron;
+    &:hover {
+        color:$marron;
+    }
 }
-.botonLinkedin{
+.boton-linkedin{
     @extend %boton;
     color: $marron;
+    &:hover {
+        color:$marron;
+    }
 }

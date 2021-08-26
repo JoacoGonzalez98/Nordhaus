@@ -1,29 +1,22 @@
-/* GRID IMAGENES DULCE */
-#grid__galeria--dulce
-    img{
-width: 100%;
-height: 290px;
-padding: 10px;
-}
-.grid__galeria--dulce--imgTorta{
-    position: relative;
-    left:250px;
-    width: 100%;
-    height: 290px;
-}
-// GRID IMAGENES SALADO
-.salado1{
-    transform: translate()
-}
-#grid__galeria--salado
-    img{
-    width: 100%;
-    height: 290px;
-    padding: 10px;
-}
+
 #galeriaDesayunos 
     img{
     width: 100%;
     height: 200px;
     padding: 10px;
+}
+
+.btn-pedidos{
+    cursor:pointer;
+    font-weight: bold;
+    font-size: 1rem;
+    color:$verde;
+    border:2px solid;
+    background:linear-gradient(to right,transparent 50%, $verde 50%) no-repeat left / 200%;
+    transition: background-position 0.3s ease;
+}
+.btn-pedidos:hover{
+    background-position: right;
+    color:$negro;
+    border: 2px solid $verde;
 }
