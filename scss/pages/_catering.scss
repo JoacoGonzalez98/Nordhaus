@@ -20,3 +20,10 @@
     color:$negro;
     border: 2px solid $verde;
 }
+.card-hover{
+    transition: 1s;
+    &:hover{
+        transform: scale(1.1);
+        z-index: 1;
+    }
+}

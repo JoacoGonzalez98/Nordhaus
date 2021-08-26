@@ -11,6 +11,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap" rel="stylesheet">
     <link rel="icon" type="image/jpg" href="../images/nordhauslogo.png">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="../css/bootstrap.min.css">
     <link rel="stylesheet" href="../css/main.css">
     <title>Nordhaus | Productos</title>
@@ -57,7 +58,7 @@
     <h1 class="display-3 fw-bold text-center main__titulos mt-3 mb-5">Nuestros Productos</h1>
 
 
-    <section class="row mb-5 my-5 panaderia-tamanio">
+    <section class="row mb-5 my-5 panaderia-tamanio" data-aos="flip-left">
         <div class="col-12 col-lg-6">
             <h2 id="panaderia" class="display-5 fw-bold text-center main__titulos mt-5 mb-3">Panadería</h2>
                 <p class="text-center">En Nordhaus nos especializamos en elaborar variados panes artesanales y una destacada línea de repostería europea.
@@ -90,7 +91,7 @@
         </section>
         
 
-        <section class="row mb-5 my-5 pasteleria-tamanio" id="pasteleria">
+        <section class="row mb-5 my-5 pasteleria-tamanio" id="pasteleria" data-aos="flip-right">
             <div class="col-12 col-lg-6">
                     <h2 class="display-5 fw-bold text-center main__titulos mt-5 mb-3">Pastelería</h2>
                         <p class="text-center">Nuestros productos se distinguen por su calidad absoluta y por ser elaborados por mano especializada, maestros reposteros y pasteleros, de primer nivel. Contamos con una amplia variedad de tortas, masas finas, budines, alfajores, scones, pepitas, galletitas, facturas.</p>
@@ -111,7 +112,7 @@
     
         </section>
 
-    <section class="row mb-5 bomboneria-tamanio" id="bomboneria">
+    <section class="row mb-5 bomboneria-tamanio" id="bomboneria" data-aos="flip-left">
             <div class="col-12 col-lg-6">
                 <h2 class="display-5 fw-bold text-center main__titulos mt-5 mb-3">Bombonería</h2>
                     <p class="text-center">Tenemos maestros chocolateros de primer nivel quienes fabrican una propia línea de bombones que podes encontrar en cajas de diferentes tamaños y gustos. Para los amantes del buen chocolate, estas pequeñas exquisiteces producen puro placer y satisfacción. Corazones sorpresa, rellenos, marmolados, con frutas secas, cereales, licores, mazapán, todos elaborados con materia prima de primera calidad. Creamos joyitas para el paladar.
@@ -187,6 +188,10 @@
         </footer>
 
     <!-- SCRIPTS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
     <script src="../js/bootstrap.min.js"></script>
 </body>
 </html>
