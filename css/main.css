@@ -133,46 +133,6 @@ html {
 .border-bottom_nav {
   border-bottom: 1px solid white;
   width: 100%;
-  margin: 30px;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  padding: 5px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.border-bottom_contacto {
-  border-bottom: 1px solid white;
-  width: 100%;
-  margin: 30px;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  padding: 5px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.border-bottom_horario {
-  border-bottom: 1px solid white;
-  width: 100%;
-  margin: 30px;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  padding: 5px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.border-bottom_redes {
-  border-bottom: 1px solid white;
-  width: 100%;
-  margin: 30px;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
