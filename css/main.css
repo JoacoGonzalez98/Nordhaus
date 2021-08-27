@@ -538,6 +538,12 @@ body::-webkit-scrollbar-thumb {
           align-items: stretch;
 }
 
+@media (max-width: 991px) {
+  .form {
+    width: 100%;
+  }
+}
+
 .tamanio-10px {
   font-size: 10px;
 }

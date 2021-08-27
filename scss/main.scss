@@ -78,6 +78,12 @@ body::-webkit-scrollbar-thumb {
     justify-content: space-around;
     align-items: stretch;
 }
+// `md` applies to small devices (landscape phones, less than 768px)
+@media (max-width: 991px) { 
+    .form{width: 100%;}
+}
+
+
 @mixin seccion($enviar){
     @if $enviar==footer{
         color:white;
