@@ -34,8 +34,8 @@ html{
 
 
 /* Boton Whatsapp */
-.btn__wpp{
-    margin: 0px 0px 40px 0px;
+.whatsapp-button{
+    z-index: 100;
 }
 .float{
     position:fixed;
@@ -59,6 +59,21 @@ html{
 .my-float{
 	margin-top:16px;
 }
+
+//Cards
+.cards-container{
+    display: flex;
+    justify-content: space-around;
+}
+@media (max-width: 991px) { 
+    .cards-container{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-direction: column;
+    }
+}
+
 /* Formulario de Contacto */
 .form{
     color:white;
@@ -86,8 +101,13 @@ html{
     flex-direction: column;
     justify-content: space-around;
 }
+@media (max-width: 991px) { 
+    .form{width: 100%;}
+}
 /* MAPS */
-
+@media (max-width: 991px) { 
+    .mapa{width: 100%;}
+}
 /* Footer */
 .footer-nav{
     list-style: none;
@@ -103,31 +123,6 @@ html{
 .border-bottom_nav{
     border-bottom: 1px solid white;
     width: 100%;
-    margin: 30px;
-    justify-content: center;
-    padding: 5px;
-    display: flex;
-}
-.border-bottom_contacto{
-    border-bottom: 1px solid white;
-    width: 100%;
-    margin: 30px;
-    justify-content: center;
-    padding: 5px;
-    display: flex;
-}
-.border-bottom_horario{
-    border-bottom: 1px solid white;
-    width: 100%;
-    margin: 30px;
-    justify-content: center;
-    padding: 5px;
-    display: flex;
-}
-.border-bottom_redes{
-    border-bottom: 1px solid white;
-    width: 100%;
-    margin: 30px;
     justify-content: center;
     padding: 5px;
     display: flex;

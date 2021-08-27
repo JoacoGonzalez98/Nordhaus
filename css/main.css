@@ -41,8 +41,8 @@ html {
 
 /* Animaciones CARDS */
 /* Boton Whatsapp */
-.btn__wpp {
-  margin: 0px 0px 40px 0px;
+.whatsapp-button {
+  z-index: 100;
 }
 
 .float {
@@ -68,6 +68,31 @@ html {
 
 .my-float {
   margin-top: 16px;
+}
+
+.cards-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+@media (max-width: 991px) {
+  .cards-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
 }
 
 /* Formulario de Contacto */
@@ -114,7 +139,19 @@ html {
       justify-content: space-around;
 }
 
+@media (max-width: 991px) {
+  .form {
+    width: 100%;
+  }
+}
+
 /* MAPS */
+@media (max-width: 991px) {
+  .mapa {
+    width: 100%;
+  }
+}
+
 /* Footer */
 .footer-nav {
   list-style: none;
@@ -133,46 +170,6 @@ html {
 .border-bottom_nav {
   border-bottom: 1px solid white;
   width: 100%;
-  margin: 30px;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  padding: 5px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.border-bottom_contacto {
-  border-bottom: 1px solid white;
-  width: 100%;
-  margin: 30px;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  padding: 5px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.border-bottom_horario {
-  border-bottom: 1px solid white;
-  width: 100%;
-  margin: 30px;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  padding: 5px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.border-bottom_redes {
-  border-bottom: 1px solid white;
-  width: 100%;
-  margin: 30px;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -458,6 +455,10 @@ body::-webkit-scrollbar-thumb {
 
 .fondo-rojo {
   background-color: red;
+}
+
+.c-marron {
+  color: #8C6F4A;
 }
 
 .c-black {
