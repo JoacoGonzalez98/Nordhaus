@@ -1,17 +1,6 @@
-.panaderia-tamanio{
-    height: 650px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.pasteleria-tamanio{
-    height: 650px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.bomboneria-tamanio{
-    height: 650px;
+.productos-tamanio{
+    width: 100%;
+    height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -57,4 +46,8 @@ transition: background-position .5s ease;
             background-position: right;
             color:white;
     }
+}
+// `md` applies to small devices (landscape phones, less than 768px)
+@media (max-width: 991px) { 
+    .productos-tamanio{width: 100%;}
 }

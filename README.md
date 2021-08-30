@@ -1,4 +1,4 @@
-# Protecto CoderHouse
+# Proyecto CoderHouse
 
 Les presento mi proyecto realizado en el curso DW de CoderHouse.
 

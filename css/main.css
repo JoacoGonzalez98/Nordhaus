@@ -3,9 +3,22 @@ html {
   scroll-behavior: smooth;
 }
 
+.main__titulo {
+  color: #117f4e;
+  font-family: 'Fjalla One', sans-serif;
+  text-shadow: 3px 0px 0px #8C6F4A;
+}
+
 .main__titulos {
   color: #8C6F4A;
   font-family: 'Fjalla One', sans-serif;
+  text-shadow: 2px 0px 0px #212121;
+}
+
+.titulo-lineas {
+  color: #212121;
+  font-family: 'Fjalla One', sans-serif;
+  text-shadow: 0px 0px 15px #117f4e;
 }
 
 .bg-marron {
@@ -96,37 +109,59 @@ html {
 }
 
 /* Formulario de Contacto */
-.form {
-  color: white;
-  padding: 10px;
-  font-size: 15px;
-  font-weight: bold;
-  background: url("../../images/cafe.jpeg");
-  background-size: cover;
-  border-radius: 30px;
-  width: 50%;
-  margin: auto;
+.botones-form_enviar {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  -webkit-box-align: stretch;
-      -ms-flex-align: stretch;
-          align-items: stretch;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  font-size: 1rem;
+  border-radius: 10px;
+  border: 5px solid #8C6F4A;
+  background-color: white;
+}
+
+.botones-form_enviar:hover {
+  background-color: #117f4e;
+  border-color: #8C6F4A;
+}
+
+.botones-form_enviar:active {
+  border-color: #117f4e;
+}
+
+.botones-form_resetear {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  font-size: 1rem;
+  border-radius: 10px;
+  border: 5px solid #8C6F4A;
+  background-color: white;
+}
+
+.botones-form_resetear:hover {
+  background-color: #117f4e;
+}
+
+.botones-form_resetear:active {
+  border-color: #117f4e;
 }
 
 .tituloForm {
   color: white;
+  font-family: 'Fjalla One', sans-serif;
 }
 
 .form button {
-  padding: 5px;
+  padding: 10px;
   border: none;
+  font-style: italic;
+  font-size: 1rem;
   cursor: pointer;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -168,7 +203,7 @@ html {
 }
 
 .border-bottom_nav {
-  border-bottom: 1px solid white;
+  border-bottom: 2px solid white;
   width: 100%;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
@@ -184,7 +219,7 @@ html {
 }
 
 .boton-facebook {
-  color: #8C6F4A;
+  color: #117f4e;
 }
 
 .boton-facebook:hover {
@@ -192,7 +227,7 @@ html {
 }
 
 .boton-instagram {
-  color: #8C6F4A;
+  color: #117f4e;
 }
 
 .boton-instagram:hover {
@@ -200,41 +235,16 @@ html {
 }
 
 .boton-linkedin {
-  color: #8C6F4A;
+  color: #117f4e;
 }
 
 .boton-linkedin:hover {
   color: #8C6F4A;
 }
 
-.panaderia-tamanio {
-  height: 650px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.pasteleria-tamanio {
-  height: 650px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.bomboneria-tamanio {
-  height: 650px;
+.productos-tamanio {
+  width: 100%;
+  height: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -306,6 +316,12 @@ html {
   color: white;
 }
 
+@media (max-width: 991px) {
+  .productos-tamanio {
+    width: 100%;
+  }
+}
+
 #galeriaDesayunos img {
   width: 100%;
   height: 200px;
@@ -352,92 +368,7 @@ html {
   color: #6C757D;
 }
 
-.marcas1 {
-  height: 200px;
-  width: 200px;
-}
-
-.marcas2 {
-  height: 200px;
-  width: 200px;
-}
-
-.marcas3 {
-  height: 200px;
-  width: 200px;
-}
-
-.marcas4 {
-  height: 200px;
-  width: 200px;
-}
-
-.marcas5 {
-  height: 200px;
-  width: 200px;
-}
-
-.marcas6 {
-  height: 200px;
-  width: 200px;
-}
-
-.marcas7 {
-  height: 200px;
-  width: 200px;
-}
-
-.marcas8 {
-  height: 200px;
-  width: 200px;
-}
-
-.marcas9 {
-  height: 200px;
-  width: 200px;
-}
-
-.marcas10 {
-  height: 200px;
-  width: 200px;
-}
-
-.marcas11 {
-  height: 200px;
-  width: 200px;
-}
-
-.marcas12 {
-  height: 200px;
-  width: 200px;
-}
-
-.marcas13 {
-  height: 200px;
-  width: 200px;
-}
-
-.marcas14 {
-  height: 200px;
-  width: 200px;
-}
-
-.marcas15 {
-  height: 200px;
-  width: 200px;
-}
-
-.marcas16 {
-  height: 200px;
-  width: 200px;
-}
-
-.marcas17 {
-  height: 200px;
-  width: 200px;
-}
-
-.marcas18 {
+.marcas-tamanio {
   height: 200px;
   width: 200px;
 }
@@ -461,6 +392,10 @@ body::-webkit-scrollbar-thumb {
   color: #8C6F4A;
 }
 
+.c-verde {
+  color: #117f4e;
+}
+
 .c-black {
   color: black;
 }
@@ -471,48 +406,6 @@ body::-webkit-scrollbar-thumb {
 
 .fondo-verde {
   background-color: #117f4e;
-}
-
-.botones-form_enviar {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: start;
-  font-size: 20px;
-  border-radius: 10px;
-  border: 5px solid #8C6F4A;
-  background-color: white;
-}
-
-.botones-form_enviar:hover {
-  background-color: #117f4e;
-}
-
-.botones-form_enviar:active {
-  border-color: #117f4e;
-}
-
-.botones-form_resetear {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: start;
-  font-size: 20px;
-  border-radius: 10px;
-  border: 5px solid #8C6F4A;
-  background-color: white;
-}
-
-.botones-form_resetear:hover {
-  background-color: #117f4e;
-}
-
-.botones-form_resetear:active {
-  border-color: #117f4e;
 }
 
 .form {

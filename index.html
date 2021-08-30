@@ -33,6 +33,9 @@
                         <a class="nav-link nav-link__fuente active" aria-current="page" href="index.html">Inicio</a>
                     </li>
                     <li class="nav-item">
+                        <a class="nav-link nav-link__fuente" href="index.html#nosotros">Nosotros</a>
+                    </li>
+                    <li class="nav-item">
                         <a class="nav-link nav-link__fuente" href="pages/productos.html">Productos</a>
                     </li>
                     <li class="nav-item dropdown">
@@ -101,7 +104,7 @@
         <!------ Contenedor Portada Texto ------>
             <div id="portada" class="col-12 col-lg-6 order-lg-first mt-3 mb-5">
                 <div class="col-12 my-3">
-                    <h1 class="display-1 text-center"><span class="fw-bold main__titulos">NORDHAUS</span>
+                    <h1 class="display-1 text-center"><span class="fw-bold main__titulo">NORDHAUS</span>
                         CONFITERIA & PANADERIA</h1>
                 </div>
                 <div class="col-12 my-3 mt-3">
@@ -113,7 +116,7 @@
     <!-- Seccion Cards -->
     <section class="row my-5 wow animate__animated animate__backInDown" id="cards">
             <div class="col-12">
-                <h2 class="display-5 fw-bold text-center main__titulos mt-5" id="prod"> Nosotros
+                <h2 class="display-5 fw-bold text-center main__titulos mt-5" id="nosotros"> Nosotros
                 </h2>
             </div>
 
@@ -156,7 +159,7 @@
         </h2>
         <div class="col-12 cl-lg-12 d-flex flex-column flex-lg-row justify-content-around">
             <div class="col-12 col-lg-6 order-lg-first mt-5 mb-5 text-center">
-            <img src="images/confiteria.jpg" class="imgRedonda wow animate__animated animate__fadeInLeft" alt="">
+            <img src="images/confiteria.jpg" class="imgRedonda wow animate__animated animate__fadeInLeft" alt="Imagen sucursal Nordhaus">
             <p class="fw-bold mt-2"><i class="bi bi-geo-alt-fill"> Av. Santa Fe 1741, Martínez.</i></p>
             <p class="fw-bold mt-2"><i class="bi bi-clock-fill"> Abierto todos los días de 7 a 21hs.</i></p>
             </div>
@@ -173,25 +176,25 @@
             </h2>
         <div class="mb-5" data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="3000">
                 <form class="form button">
-                    <h1 class="main__titulos tituloForm">Dejanos tu consulta</h1>
+                    <h1 class="tituloForm">Dejanos tu consulta</h1>
                     <label for="nombre">Nombre</label>
-                    <input type="text" name="nombre" placeholder="Escriba su nombre" id="nombre" autocomplete="off">
+                    <input type="text" name="nombre" placeholder="Escriba su nombre" id="nombre" autocomplete="off" class="fst-italic">
             
                     <label for="casilla">Email</label>
-                    <input type="email" name="casilla" placeholder="Escriba su mail" id="casilla"> 
+                    <input type="email" name="casilla" placeholder="Escriba su e-mail" id="casilla" class="fst-italic"> 
             
                     <label for="celular">Celular</label>
-                    <input type="number" name="celular" id="celular" placeholder="Celular"> 
+                    <input type="number" name="celular" id="celular" placeholder="Celular" class="fst-italic"> 
             
                     <label  for="consultas">Mensaje</label>
-                    <textarea id="consultas" name="consultas" placeholder="Escribe aqui..." cols="50" rows="10"></textarea>
+                    <textarea id="consultas" name="consultas" placeholder="Escribe aqui tu mensaje..." class="fst-italic" cols="50" rows="10"></textarea>
                     <!-- Botones Contacto -->
                     <div class="d-flex flex-column flex-lg-row justify-content-start">
                     <div class="botones-form_enviar">
-                    <button class="btn fw-bold" type="submit">Enviar</button>
+                    <button class="btn fw-bolder" type="submit">Enviar</button>
                     </div>
                     <div class="botones-form_resetear">
-                    <button type="reset" class="btn fw-bold">Resetear</button>
+                    <button type="reset" class="btn fw-bolder">Resetear</button>
                     </div>
                     </div>
                 </form>
@@ -207,9 +210,9 @@
     <div class="col-12 border-bottom p-5">
             <div class="row align-items-center d-flex flex-row justify-content-center align-items-stretch">
                 <!-- Navegacion -->
-                <div class="col-12 col-lg-3">
+                <div class="col-12 col-lg-3 text-center h-75">
                     <h4 class="border-bottom_nav">NAVEGACIÓN</h4>
-                    <ul class="footer-nav text-center">
+                    <ul class="footer-nav text-center text-lg-center mx-auto">
                         <li><a href="index.html" class="footer-nav">Inicio</a></li>
                         <li><a href="pages/productos.html" class="footer-nav">Productos</a></li>
                         <li><a href="pages/corporativo.html" class="footer-nav">Corporativo</a></li>
@@ -228,12 +231,12 @@
                     <!-- HORARIOS -->
                     <div class="col-12 col-lg-3 text-center h-75">
                         <h4 class="border-bottom_nav">HORARIO DE ATENCIÓN</h4>
-                            <p class="col-12 fst-italic text-lg-center mx-auto">Todos los días del año inclusive los feriados de 7 a 21 horas.</p>
+                            <p class="col-12 fst-italic text-lg-center mx-auto">Todos los días del año inclusive <br> los feriados  7 a 21 horas.</p>
                     </div>
                     <!-- REDES SOCIALES -->
                     <div class="col-12 col-lg-3 text-center h-75">
                         <h4 class="border-bottom_nav">NUESTRAS REDES</h4>
-                            <div class="col-12 col-lg-3 d-flex justify-content-around text-center w-100 m-auto">
+                            <div class="col-12 col-lg-3 d-flex justify-content-around text-center w-50 m-auto">
                             <a href="https://www.facebook.com/Nordhaus.Confiteria" class="boton-facebook" target="_blank"><i title="Seguinos en Facebook" class="bi bi-facebook"></i></a>
                             <a href="https://www.instagram.com/confiterianordhaus/" class="boton-instagram" target="_blank"><i title="Seguinos en Instagram" class="bi bi-instagram"></i></a>
                             <a href="https://www.linkedin.com/in/confiter%C3%ADa-nordhaus-83830178/" class="boton-linkedin" target="_blank"><i title="Seguinos en Linkedin" class="bi bi-linkedin"></i></a>
