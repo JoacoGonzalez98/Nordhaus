@@ -83,6 +83,10 @@ html {
   margin-top: 16px;
 }
 
+.card-titulo-hover:hover {
+  color: #117f4e;
+}
+
 .cards-container {
   display: -webkit-box;
   display: -ms-flexbox;

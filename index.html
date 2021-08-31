@@ -21,7 +21,7 @@
 <body>
 
     <!------------- Header -------- Navbar -------------------->
-        <nav class="navbar navbar-expand-lg navbar-light bg-light border-bottom border-secondary mb-5">
+        <nav id="pagetop" class="navbar navbar-expand-lg navbar-light bg-light border-bottom border-secondary mb-5">
             <div class="container">
                 <a class="navbar-brand" href="index.html"><img src="images/nordhauslogo.png" class="nav-bar__logo nav-bar__logo--hover" alt="Imagen del Logo Nordhaus"></a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
@@ -130,7 +130,7 @@
                 <div class="card wow animate__animated animate__pulse" style="width: 18rem;">
                         <img src="images/panes-artesanales-nordhaus-2015-foto-01.jpg" class="card-img-top" alt="Imagen panadería">
                     <div class="card-body">
-                        <h5 class="card-title fw-bold text-center"><a href="pages/productos.html#panaderia" class="link-dark">Panadería</a></h5>
+                        <h5 class="card-title fw-bold text-center"><a href="pages/productos.html#panaderia" class="link-dark card-titulo-hover">Panadería</a></h5>
                         <p class="card-text text-center">Día a día amasamos exquisitos panes especiales (panes de campo, criollo, spekkel, integrales, saborizados) galletas, pizzas.</p>
                     </div>
                 </div>
@@ -138,7 +138,7 @@
                 <div class="card wow animate__animated animate__pulse" style="width: 18rem;">
                         <img src="images/05.-Torta-Penny-Post-Nordhaus-1024x683.jpg" class="card-img-top" alt="Imagen pastelería">
                     <div class="card-body">
-                        <h5 class="card-title fw-bold text-center"><a href="pages/productos.html#pasteleria" class="link-dark">Repostería | Pastelería</a></h5>
+                        <h5 class="card-title fw-bold text-center"><a href="pages/productos.html#pasteleria" class="link-dark card-titulo-hover">Repostería | Pastelería</a></h5>
                         <p class="card-text text-center">Nos distinguimos por  productos  típicos del centro de Europa, particularmente de Alemania y Austria. Algunos de ellos son: el pan dulce alemán conocido como Stollen, budín húngaro y la torta galesa.</p>
                     </div>
                 </div>
@@ -146,7 +146,7 @@
                 <div class="card wow animate__animated animate__pulse" style="width: 18rem;">
                         <img src="images/06.-chocolate-bombones-nordhaus.jpg" class="card-img-top" alt="Imagen bombonería">
                     <div class="card-body">
-                        <h5 class="card-title fw-bold text-center"><a href="pages/productos.html#bomboneria" class="link-dark">Bombonería</a></h5>
+                        <h5 class="card-title fw-bold text-center"><a href="pages/productos.html#bomboneria" class="link-dark card-titulo-hover">Bombonería</a></h5>
                         <p class="card-text text-center">Corazones sorpresa, rellenos, marmolados, con frutas secas, cereales, licores, mazapán, todos elaborados con materia prima de primera calidad.</p>
                     </div>
                 </div>
@@ -165,7 +165,7 @@
             </div>
             <!-- MAPA -->
             <div class="col-12 col-lg-6 selector-for-some-widget">
-                <iframe class="mapa" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3288.5987408813985!2d-58.50394708472337!3d-34.487702158875884!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb1a949c3805f%3A0xe7dbea872b8e827a!2sNordhaus!5e0!3m2!1ses!2sar!4v1628790393451!5m2!1ses!2sar" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                <iframe class="mapa" data-aos="flip-left" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3288.5987408813985!2d-58.50394708472337!3d-34.487702158875884!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb1a949c3805f%3A0xe7dbea872b8e827a!2sNordhaus!5e0!3m2!1ses!2sar!4v1628790393451!5m2!1ses!2sar" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
             </div>
         </div>
     </section>
@@ -176,7 +176,7 @@
             </h2>
         <div class="mb-5" data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="3000">
                 <form class="form button">
-                    <h1 class="tituloForm">Dejanos tu consulta</h1>
+                    <h1 class="tituloForm main__titulo">Dejanos tu consulta</h1>
                     <label for="nombre">Nombre</label>
                     <input type="text" name="nombre" placeholder="Escriba su nombre" id="nombre" autocomplete="off" class="fst-italic">
             
@@ -213,7 +213,7 @@
                 <div class="col-12 col-lg-3 text-center h-75">
                     <h4 class="border-bottom_nav">NAVEGACIÓN</h4>
                     <ul class="footer-nav text-center text-lg-center mx-auto">
-                        <li><a href="index.html" class="footer-nav">Inicio</a></li>
+                        <li><a href="index.html#pagetop" class="footer-nav">Inicio</a></li>
                         <li><a href="pages/productos.html" class="footer-nav">Productos</a></li>
                         <li><a href="pages/corporativo.html" class="footer-nav">Corporativo</a></li>
                         <li><a href="pages/catering.html" class="footer-nav">Servicio de Catering</a></li>

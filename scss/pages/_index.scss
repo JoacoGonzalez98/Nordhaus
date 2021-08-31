@@ -72,6 +72,9 @@ html{
 }
 
 //Cards
+.card-titulo-hover:hover{
+    color: $verde;
+}
 .cards-container{
     display: flex;
     justify-content: space-around;
