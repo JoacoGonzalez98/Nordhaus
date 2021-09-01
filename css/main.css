@@ -113,74 +113,134 @@ html {
 }
 
 /* Formulario de Contacto */
-.botones-form_enviar {
+.form-contacto {
+  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: start;
-  font-size: 1rem;
-  border-radius: 10px;
-  border: 5px solid #8C6F4A;
-  background-color: white;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  height: 100%;
+  padding: 20px 100px;
 }
 
-.botones-form_enviar:hover {
-  background-color: #117f4e;
-  border-color: #8C6F4A;
+.form-contacto::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: url("../../images/01.panes-Nordhaus.jpg") no-repeat;
+  background-size: cover;
+  z-index: -1;
+  -webkit-filter: blur(5px);
+          filter: blur(5px);
 }
 
-.botones-form_enviar:active {
-  border-color: #117f4e;
+.contact-box {
+  max-width: 850px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.871);
+  -webkit-box-shadow: 0px 0px 19px 5px rgba(0, 0, 0, 0.19);
+          box-shadow: 0px 0px 19px 5px rgba(0, 0, 0, 0.19);
 }
 
-.botones-form_resetear {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: start;
-  font-size: 1rem;
-  border-radius: 10px;
-  border: 5px solid #8C6F4A;
-  background-color: white;
+.left {
+  height: 100%;
+  background: url("../../images/01.panes-Nordhaus.jpg") no-repeat;
+  background-size: cover;
 }
 
-.botones-form_resetear:hover {
-  background-color: #117f4e;
+.right {
+  padding: 25px 40px;
 }
 
-.botones-form_resetear:active {
-  border-color: #117f4e;
-}
-
-.tituloForm {
-  color: white;
+.titulo-form {
+  color: #8C6F4A;
+  position: relative;
+  padding-bottom: 10px;
+  margin-bottom: 10px;
   font-family: 'Fjalla One', sans-serif;
 }
 
-.form button {
-  padding: 10px;
-  border: none;
-  font-style: italic;
-  font-size: 1rem;
-  cursor: pointer;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+.titulo-form::after {
+  content: '';
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  height: 4px;
+  width: 50px;
+  border-radius: 2px;
+  background-color: #117f4e;
 }
 
-@media (max-width: 991px) {
-  .form {
-    width: 100%;
+.field {
+  width: 100%;
+  padding: 0.5rem 1rem;
+  outline: none;
+  border: 2px solid rgba(0, 0, 0, 0);
+  background-color: rgba(230, 230, 230, 0.6);
+  font-size: 1.1rem;
+  margin-bottom: 22px;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+.field:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.field:focus {
+  background-color: #fff;
+  border: 2px solid rgba(34, 162, 55, 0.439);
+}
+
+.area {
+  min-height: 150px;
+}
+
+.btn-enviar {
+  width: 100%;
+  padding: 0.5rem 1rem;
+  font-size: 1.1rem;
+  background-color: #117f4e;
+  cursor: pointer;
+  outline: none;
+  border: none;
+  -webkit-transition: .3s;
+  transition: .3s;
+  color: #fff;
+}
+
+.btn-enviar:hover {
+  background-color: #27ae60;
+}
+
+@media screen and (max-width: 880px) {
+  .contact-box {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+  .left {
+    height: 200px;
   }
 }
 
