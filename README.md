@@ -1,6 +1,6 @@
 # Proyecto CoderHouse
 
-:bulb: Les presento mi proyecto realizado en el curso DW de CoderHouse, la idea fue hacer una nueva página para Nordhaus.
+:bulb: Les presento mi proyecto realizado en el curso DW de CoderHouse, la idea fue crear una página nueva para Nordhaus.
 
 :gear: Todas las herramientas que usé: HTML, CSS, SASS, Node JS, JavaScript, Bootstrap, GlideJS, Google Fonts, SEO y librerías de efectos(WOW y AOS).
 
