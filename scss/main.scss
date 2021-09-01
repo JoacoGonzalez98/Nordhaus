@@ -42,24 +42,109 @@ body::-webkit-scrollbar-thumb {
 
 
 // Tuve que agregar el form al main.scss porque sino no reconoce el background url y lo saltea(el watch SASS)
-.form{
-    color:white;
-    padding: 10px;
-    font-size: 15px;
-    font-weight: bold;
-    background: url("../images/cafe.jpeg");
-    background-size: cover;
-    border-radius: 30px;
-    width: 50%;    
-    margin: auto;
+/* Formulario de Contacto */
+.form-contacto{
+    position: relative;
     display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: stretch;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    padding: 20px 100px;
+        &::after{
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background: url("../../images/01.panes-Nordhaus.jpg") no-repeat;
+            background-size: cover;
+            z-index: -1;
+            filter: blur(5px);
+        }
 }
-// `md` applies to small devices (landscape phones, less than 768px)
-@media (max-width: 991px) { 
-    .form{width: 100%;}
+.contact-box{
+    max-width: 850px;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.871);
+    box-shadow: 0px 0px 19px 5px rgba(0, 0, 0, 0.19);
+
+}
+.left{
+    height: 100%;
+    background: url("../../images/01.panes-Nordhaus.jpg") no-repeat;
+    background-size: cover;
+}
+.right{
+    padding: 25px 40px;
+}
+.titulo-form{
+    color:$marron;
+    position: relative;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+    font-family: 'Fjalla One', sans-serif;
+    &::after{
+        content: '';
+        position: absolute;
+        left: 50%;
+        bottom: 0;
+        transform: translateX(-50%);
+        height: 4px;
+        width: 50px;
+        border-radius: 2px;
+        background-color: $verde;
+    }
+}
+.field{
+    width: 100%;
+    padding: 0.5rem 1rem;
+    outline: none;
+    border: 2px solid rgba(0, 0, 0, 0);
+    background-color: rgba(230, 230, 230, 0.6);
+    font-size: 1.1rem;
+    margin-bottom: 22px;
+    transition: .3s;
+    &:hover{
+        background-color: rgba(0, 0, 0, 0.1);
+    }
+    &:focus{
+        background-color: #fff;
+        border: 2px solid rgba(34, 162, 55, 0.439);
+        
+    }
+}
+.area{
+    min-height: 150px;
+}
+
+.btn-enviar{
+    width: 100%;
+    padding: 0.5rem 1rem;
+    font-size: 1.1rem;
+    background-color: $verde;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    transition: .3s;
+    color: #fff;
+    &:hover{
+        background-color: #27ae60;
+    }
+}
+@media screen and (max-width:880px) {
+    .contact-box{
+        grid-template-columns: 1fr;
+    }
+    .left{
+        height: 200px;
+    }
+    
 }
 
 
