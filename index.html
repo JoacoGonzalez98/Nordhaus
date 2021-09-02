@@ -18,10 +18,10 @@
     <link rel="stylesheet" href="css/main.css">
     <title>Nordhaus | Inicio</title>
 </head>
-<body>
 
+<body>
     <!------------- Header -------- Navbar -------------------->
-        <nav id="pagetop" class="navbar navbar-expand-lg navbar-light bg-light border-bottom border-secondary mb-5">
+        <nav id="pagetop" class="navbar navbar-expand-lg navbar-light bg-light border-bottom border-secondary mb-5 nav-shadow">
             <div class="container">
                 <a class="navbar-brand" href="index.html"><img src="images/nordhauslogo.png" class="nav-bar__logo nav-bar__logo--hover" alt="Imagen del Logo Nordhaus"></a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
@@ -63,7 +63,7 @@
 <!-- BOTON WHATSAPP -->
     
 <div class="col-12 m-4 my-3 whatsapp-button">
-    <a href="https://api.whatsapp.com/send?phone=541137719756&text=Hola%20quiero%20hacer%20un%20pedido" class="float" target="_blank">
+    <a href="https://api.whatsapp.com/send?phone=5491125857837&text=Hola%20quiero%20hacer%20un%20pedido" class="float" target="_blank">
         <i class="bi bi-whatsapp my-float" title="¡Ahora podés pedir por Whatsapp!"></i>
         </a>
 </div>
@@ -127,7 +127,7 @@
             
             <div class="col-12 my-5 cards-container">
                 <!-- Card 1 -->
-                <div class="card wow animate__animated animate__pulse" style="width: 18rem;">
+                <div class="card wow animate__animated animate__pulse mb-5" style="width: 18rem;">
                         <img src="images/panes-artesanales-nordhaus-2015-foto-01.jpg" class="card-img-top" alt="Imagen panadería">
                     <div class="card-body">
                         <h5 class="card-title fw-bold text-center"><a href="pages/productos.html#panaderia" class="link-dark card-titulo-hover">Panadería</a></h5>
@@ -135,7 +135,7 @@
                     </div>
                 </div>
                 <!-- Card 2 -->
-                <div class="card wow animate__animated animate__pulse" style="width: 18rem;">
+                <div class="card wow animate__animated animate__pulse mb-5" style="width: 18rem;">
                         <img src="images/05.-Torta-Penny-Post-Nordhaus-1024x683.jpg" class="card-img-top" alt="Imagen pastelería">
                     <div class="card-body">
                         <h5 class="card-title fw-bold text-center"><a href="pages/productos.html#pasteleria" class="link-dark card-titulo-hover">Repostería | Pastelería</a></h5>
@@ -157,22 +157,23 @@
     <section class="row mb-5">
         <h2 class="display-5 fw-bold text-center mt-5 mb-5 main__titulos" id="ubi"> Ubicación
         </h2>
-        <div class="col-12 cl-lg-12 d-flex flex-column flex-lg-row justify-content-around">
+        <div class="col-12 cl-lg-12 d-flex flex-column flex-lg-row justify-content-around mb-5">
             <div class="col-12 col-lg-6 order-lg-first mt-5 mb-5 text-center">
-            <img src="images/confiteria.jpg" class="imgRedonda wow animate__animated animate__fadeInLeft" alt="Imagen sucursal Nordhaus">
+            <img src="images/confiteria.jpg" class="img-redonda"data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine" alt="Imagen sucursal Nordhaus">
             <p class="fw-bold mt-2"><i class="bi bi-geo-alt-fill"> Av. Santa Fe 1741, Martínez.</i></p>
             <p class="fw-bold mt-2"><i class="bi bi-clock-fill"> Abierto todos los días de 7 a 21hs.</i></p>
             </div>
             <!-- MAPA -->
-            <div class="col-12 col-lg-6 selector-for-some-widget">
+            <div class="col-12 col-lg-6">
                 <iframe class="mapa" data-aos="flip-left" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3288.5987408813985!2d-58.50394708472337!3d-34.487702158875884!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb1a949c3805f%3A0xe7dbea872b8e827a!2sNordhaus!5e0!3m2!1ses!2sar!4v1628790393451!5m2!1ses!2sar" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
             </div>
         </div>
     </section>
     <!-- Contacto -->
-    <div class="form-contacto" id="contacto">
-        <div class="contact-box">
-                <div class="left"></div>
+    <div class="form-contacto mt-5 mb-5" data-aos="fade-zoom-in" data-aos-easing="ease-in-back" data-aos-delay="300" data-aos-offset="0" id="contacto">
+        <div class="contact-box mt-5 mb-5" data-aos="fade-right" data-aos-offset="500" data-aos-easing="ease-in-sine">
+                <div class="left">
+                </div>
                 <div class="right">
                     <h2 class="titulo-form main__titulos">CONTACTANOS</h2>
                     <input type="text" class="field" placeholder="Nombre">
@@ -193,7 +194,7 @@
             <div class="row align-items-center d-flex flex-row justify-content-center align-items-stretch">
                 <!-- Navegacion -->
                 <div class="col-12 col-lg-3 text-center h-75">
-                    <h4 class="border-bottom_nav">NAVEGACIÓN</h4>
+                    <h4 class="border-bottom-nav">NAVEGACIÓN</h4>
                     <ul class="footer-nav text-center text-lg-center mx-auto">
                         <li><a href="index.html#pagetop" class="footer-nav">Inicio</a></li>
                         <li><a href="pages/productos.html" class="footer-nav">Productos</a></li>
@@ -204,7 +205,7 @@
                 </div>
                 <!-- CONTACTO -->
                     <div class="col-12 col-lg-3 text-center h-75">
-                        <h4 class="border-bottom_nav">CONTACTO</h4>
+                        <h4 class="border-bottom-nav">CONTACTO</h4>
                         <p class="col-12"><i class="bi bi-geo-alt "></i> Av. Santa Fe 1741, Martínez</p>
                         <p class="col-12"><i class="bi bi-telephone "></i> 4792-8420 / 4792-4021</p>
                         <p class="col-12"><i class="bi bi-envelope "></i> nordhaussrl@arnetbiz.com.ar</p>
@@ -212,12 +213,12 @@
                     </div>
                     <!-- HORARIOS -->
                     <div class="col-12 col-lg-3 text-center h-75">
-                        <h4 class="border-bottom_nav">HORARIO DE ATENCIÓN</h4>
+                        <h4 class="border-bottom-nav">HORARIO DE ATENCIÓN</h4>
                             <p class="col-12 fst-italic text-lg-center mx-auto">Todos los días del año inclusive <br> los feriados  7 a 21 horas.</p>
                     </div>
                     <!-- REDES SOCIALES -->
                     <div class="col-12 col-lg-3 text-center h-75">
-                        <h4 class="border-bottom_nav">NUESTRAS REDES</h4>
+                        <h4 class="border-bottom-nav">NUESTRAS REDES</h4>
                             <div class="col-12 col-lg-3 d-flex justify-content-around text-center w-50 m-auto">
                             <a href="https://www.facebook.com/Nordhaus.Confiteria" class="boton-facebook" target="_blank"><i title="Seguinos en Facebook" class="bi bi-facebook"></i></a>
                             <a href="https://www.instagram.com/confiterianordhaus/" class="boton-instagram" target="_blank"><i title="Seguinos en Instagram" class="bi bi-instagram"></i></a>

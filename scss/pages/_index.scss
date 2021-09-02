@@ -24,6 +24,9 @@ html{
 }
 
 /* Navbar */
+.nav-shadow {
+    box-shadow:(black 0px 0px 10px)
+}
 .nav-link__fuente{
     font-family: 'Fjalla One', sans-serif;
 }
@@ -88,6 +91,16 @@ html{
     }
 }
 
+/* Ubicación */
+// IMG redonda de la confiteria por fuera
+.img-redonda {
+    width:300px;
+    height:300px;
+    border-radius:150px;
+    border-color: $verde;
+    border-style: solid;
+    justify-content: center;
+}
 
 /* MAPS */
 @media (max-width: 991px) { 
@@ -98,6 +111,7 @@ html{
     list-style: none;
     color: white;
     text-decoration: none;
+    padding: 0;
     &:hover{
         color:$marron;
     }
@@ -105,13 +119,15 @@ html{
 .footer-widgets{
     text-align: center;
 }
-.border-bottom_nav{
+.border-bottom-nav{
     border-bottom: 2px solid white;
     width: 100%;
     justify-content: center;
     padding: 5px;
     display: flex;
 }
+
+
 
 %boton{
     border-radius: 10px;

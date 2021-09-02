@@ -5,9 +5,12 @@
 @import 'pages/catering';
 @import 'pages/desayunos';
 @import 'pages/corporativo';
-
 /* font-family: 'Fjalla One', sans-serif; */
 
+
+html{
+    scroll-behavior: smooth;
+}
 //Scrollbar personalizado (no funciona en: Firefox y Edge)
 body::-webkit-scrollbar {
     width: 7px;
@@ -28,6 +31,9 @@ body::-webkit-scrollbar-thumb {
     color: $verde;
 }
 .c-black{color:black
+}
+.c-gris{
+    color:$gris;
 }
 .c-white{
     color:white
@@ -122,7 +128,7 @@ body::-webkit-scrollbar-thumb {
 .area{
     min-height: 150px;
 }
-
+/* Boton enviar */
 .btn-enviar{
     width: 100%;
     padding: 0.5rem 1rem;
@@ -147,19 +153,19 @@ body::-webkit-scrollbar-thumb {
     
 }
 
-
+// Mixin hecho para una entrega
 @mixin seccion($enviar){
     @if $enviar==footer{
-        color:white;
+        color:$blanco;
         background-color: $negro;
     }@else if $enviar==tabla{
         color:$marron;
-        background-color: white;
+        background-color: $blanco;
     }@else if $enviar==cuadro{
         color:red;
-        background-color: white;
+        background-color: $blanco;
     }@else {
-        color:white;
+        color:$blanco;
         background-color:pink;
     }
 }
@@ -170,25 +176,18 @@ body::-webkit-scrollbar-thumb {
     }
 }
 
-
-html{
-    scroll-behavior: smooth;
-}
-//
+// font del footer
 footer{
     @include seccion(footer);
     div a{
-        font-size: 20px;
+        font-size: 1.3rem;
     }
 }
 
-.imgRedonda {
-    width:300px;
-    height:300px;
-    border-radius:150px;
-    border-color: $verde;
-    border-style: solid;
-    justify-content: center;
+//margen pagina 404
+.error{
+    margin-top: 200px;
+    margin-bottom: 250px;
 }
 
 
