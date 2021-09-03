@@ -16,17 +16,9 @@ html {
 }
 
 .titulo-lineas {
-  color: #212121;
+  color: #117f4e;
   font-family: 'Fjalla One', sans-serif;
-  text-shadow: 0px 0px 15px #117f4e;
-}
-
-.bg-marron {
-  background-color: #cc9a2f;
-}
-
-.bg-negro {
-  background-color: #212121;
+  text-shadow: 1px 0px 0px #212121;
 }
 
 /* Navbar */
@@ -49,7 +41,7 @@ html {
 
 /* tamaño y Hover Logo */
 .nav-bar__logo {
-  width: 110px;
+  width: 115px;
 }
 
 .nav-bar__logo:hover {
@@ -57,7 +49,6 @@ html {
           transform: translateY(-3px);
 }
 
-/* Animaciones CARDS */
 /* Boton Whatsapp */
 .whatsapp-button {
   z-index: 100;
@@ -88,6 +79,7 @@ html {
   margin-top: 16px;
 }
 
+/* Animaciones CARDS */
 .card-titulo-hover:hover {
   color: #117f4e;
 }
@@ -129,7 +121,7 @@ html {
           justify-content: center;
 }
 
-/* MAPS */
+/* Google MAPS */
 @media (max-width: 991px) {
   .mapa {
     width: 100%;
@@ -164,31 +156,15 @@ html {
   display: flex;
 }
 
-.boton-facebook, .boton-instagram, .boton-linkedin {
+.botones-redes {
   border-radius: 10px;
 }
 
-.boton-facebook {
+.botones-redes {
   color: #117f4e;
 }
 
-.boton-facebook:hover {
-  color: #8C6F4A;
-}
-
-.boton-instagram {
-  color: #117f4e;
-}
-
-.boton-instagram:hover {
-  color: #8C6F4A;
-}
-
-.boton-linkedin {
-  color: #117f4e;
-}
-
-.boton-linkedin:hover {
+.botones-redes:hover {
   color: #8C6F4A;
 }
 
@@ -209,6 +185,12 @@ html {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+@media (max-width: 991px) {
+  .productos-tamanio {
+    width: 100%;
+  }
 }
 
 .botones-productos {
@@ -271,12 +253,6 @@ html {
   color: white;
 }
 
-@media (max-width: 991px) {
-  .productos-tamanio {
-    width: 100%;
-  }
-}
-
 .btn-pedidos {
   cursor: pointer;
   font-weight: bold;
@@ -308,7 +284,7 @@ html {
 
 #galeriaDesayunos img {
   width: 100%;
-  height: 200px;
+  height: 220px;
   padding: 10px;
   -webkit-filter: drop-shadow(black 6px 6px 5px);
           filter: drop-shadow(black 6px 6px 5px);
@@ -318,12 +294,19 @@ html {
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
-     object-fit: cover;
+    object-fit: cover;
 }
 
 .marcas-tamanio {
-  height: 200px;
-  width: 200px;
+  height: 12rem;
+  width: 12rem;
+}
+
+@media screen and (max-width: 880px) {
+  .marcas-tamanio {
+    height: 10rem;
+    width: 10rem;
+  }
 }
 
 /* font-family: 'Fjalla One', sans-serif; */
@@ -367,6 +350,14 @@ body::-webkit-scrollbar-thumb {
 
 .fondo-verde {
   background-color: #117f4e;
+}
+
+.bg-negro {
+  background-color: #212121;
+}
+
+.bg-blanco {
+  background-color: #ffffff;
 }
 
 /* Formulario de Contacto */
@@ -524,7 +515,7 @@ footer div a {
 }
 
 .error {
-  margin-top: 200px;
-  margin-bottom: 250px;
+  height: 100vh;
+  color: #141414;
 }
 /*# sourceMappingURL=main.css.map */

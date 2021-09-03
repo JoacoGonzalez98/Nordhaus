@@ -4,7 +4,14 @@
     object-fit: cover;
 }
 .marcas-tamanio{
-    height: 200px;
-    width: 200px;
+    height: 12rem;
+    width: 12rem;
 }
 
+@media screen and (max-width:880px) {
+    .marcas-tamanio{
+        height: 10rem;
+        width: 10rem;
+    }
+    
+}

@@ -1,26 +1,23 @@
 html{
     scroll-behavior: smooth;
 }
+//Para el NORDHAUS del index
 .main__titulo{
     color:$verde;
     font-family: 'Fjalla One', sans-serif;
     text-shadow: 3px 0px 0px $marron;
 }
+//Para todos los titulos
 .main__titulos{
     color:$marron;
     font-family: 'Fjalla One', sans-serif;
     text-shadow: 2px 0px 0px $negro;
 }
+//Para titulo linea salado, linea dulce y nuestros clientes
 .titulo-lineas{
-    color:$negro;
+    color:$verde;
     font-family: 'Fjalla One', sans-serif;
-    text-shadow: 0px 0px 15px $verde;
-}
-
-.bg-marron{background-color:rgb(204,154,47);
-}
-.bg-negro{
-    background-color: $negro;
+    text-shadow: 1px 0px 0px $negro;
 }
 
 /* Navbar */
@@ -38,13 +35,11 @@ html{
 }
 /* tamaño y Hover Logo */
 .nav-bar__logo{
-    width: 110px;
+    width: 115px;
     &:hover{
         transform: translateY(-3px); 
     }
 }
-
-/* Animaciones CARDS */
 
 
 /* Boton Whatsapp */
@@ -75,6 +70,7 @@ html{
 }
 
 //Cards
+/* Animaciones CARDS */
 .card-titulo-hover:hover{
     color: $verde;
 }
@@ -92,7 +88,7 @@ html{
 }
 
 /* Ubicación */
-// IMG redonda de la confiteria por fuera
+// IMG de la confiteria por fuera
 .img-redonda {
     width:300px;
     height:300px;
@@ -102,7 +98,7 @@ html{
     justify-content: center;
 }
 
-/* MAPS */
+/* Google MAPS */
 @media (max-width: 991px) { 
     .mapa{width: 100%;}
 }
@@ -127,26 +123,10 @@ html{
     display: flex;
 }
 
-
-
 %boton{
     border-radius: 10px;
 }
-.boton-facebook{
-    @extend %boton;
-    color: $verde;
-    &:hover {
-        color:$marron;
-    }
-}
-.boton-instagram{
-    @extend %boton;
-    color: $verde;
-    &:hover {
-        color:$marron;
-    }
-}
-.boton-linkedin{
+.botones-redes{
     @extend %boton;
     color: $verde;
     &:hover {

@@ -5,8 +5,8 @@
 @import 'pages/catering';
 @import 'pages/desayunos';
 @import 'pages/corporativo';
-/* font-family: 'Fjalla One', sans-serif; */
 
+/* font-family: 'Fjalla One', sans-serif; */
 
 html{
     scroll-behavior: smooth;
@@ -40,6 +40,12 @@ body::-webkit-scrollbar-thumb {
 }
 .fondo-verde{
     background-color: $verde;
+}
+.bg-negro{
+    background-color: $negro;
+}
+.bg-blanco{
+    background-color: $blanco;
 }
 @mixin destacar($background, $color){
     background-color:$background;
@@ -186,10 +192,6 @@ footer{
 
 //margen pagina 404
 .error{
-    margin-top: 200px;
-    margin-bottom: 250px;
+    height: 100vh;
+    color: #141414;
 }
-
-
-
-

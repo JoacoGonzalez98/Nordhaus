@@ -1,3 +1,4 @@
+//efecto hover botones catering
 .btn-pedidos{
     cursor:pointer;
     font-weight: bold;
@@ -12,6 +13,7 @@
     color:$negro;
     border: 2px solid $verde;
 }
+//efecto Card zoom
 .card-hover{
     transition: 1s;
     &:hover{

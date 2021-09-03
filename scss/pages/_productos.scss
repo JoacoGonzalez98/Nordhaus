@@ -1,3 +1,5 @@
+//Pagina productos
+
 .productos-margen{
     margin-top: 200px;
     margin-bottom: 200px;
@@ -10,6 +12,11 @@
     justify-content: center;
     align-items: center;
 }
+// `md` applies to small devices (landscape phones, less than 768px)
+@media (max-width: 991px) { 
+    .productos-tamanio{width: 100%;}
+}
+
 .botones-productos{
     display: flex;
     flex-direction: row;
@@ -51,8 +58,4 @@ transition: background-position .5s ease;
             background-position: right;
             color:white;
     }
-}
-// `md` applies to small devices (landscape phones, less than 768px)
-@media (max-width: 991px) { 
-    .productos-tamanio{width: 100%;}
 }
